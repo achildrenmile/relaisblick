@@ -1,177 +1,177 @@
-# Relaisblick - Österreichische Relais-Karte
+# Relaisblick - Austrian Repeater Map
 
-Interaktive Webkarte zur Darstellung aller Amateurfunk-Relais in Österreich.
+Interactive web map displaying all amateur radio repeaters in Austria.
 
 ## Features
 
-- Interaktive Karte mit allen österreichischen Amateurfunk-Relais
-- Filter nach Band (2m, 70cm, 23cm, etc.)
-- Filter nach Typ (FM, DMR, D-STAR, C4FM, etc.)
-- Filter nach Bundesland
-- Suche nach Rufzeichen oder Standort
-- Detailansicht mit Frequenzen, CTCSS, DMR-IDs, etc.
-- Responsive Design für Desktop und Mobile
-- Automatisches wöchentliches Daten-Update
+- Interactive map with all Austrian amateur radio repeaters
+- Filter by band (2m, 70cm, 23cm, etc.)
+- Filter by type (FM, DMR, D-STAR, C4FM, etc.)
+- Filter by federal state (Bundesland)
+- Search by callsign or location
+- Detail view with frequencies, CTCSS, DMR IDs, etc.
+- Responsive design for desktop and mobile
+- Automatic weekly data updates
 
-## Schnellstart
+## Quick Start
 
-### Entwicklung
+### Development
 
 ```bash
-# Dependencies installieren
+# Install dependencies
 npm install
 
-# Development Server starten
+# Start development server
 npm run dev
 ```
 
-Öffne http://localhost:5173 im Browser.
+Open http://localhost:5173 in your browser.
 
-### Mit Docker (Entwicklung)
+### With Docker (Development)
 
 ```bash
 docker compose -f docker-compose.dev.yml up
 ```
 
-### Produktion mit Docker
+### Production with Docker
 
 ```bash
 docker compose up -d
 ```
 
-Die Anwendung ist dann unter http://localhost:80 erreichbar.
+The application will be available at http://localhost:80.
 
-## Projektstruktur
+## Project Structure
 
 ```
 relaisblick/
 ├── src/
 │   ├── components/
-│   │   ├── Map/          # Kartenkomponenten (Leaflet)
-│   │   ├── Sidebar/      # Filter, Suche, Relaisliste
-│   │   └── UI/           # Allgemeine UI-Komponenten
-│   ├── hooks/            # React Hooks
-│   ├── types/            # TypeScript Typdefinitionen
-│   └── utils/            # Hilfsfunktionen
-├── scripts/              # Python Scraper
-│   └── sources/          # Datenquellen (ÖVSV, Repeaterbook)
-├── data/                 # Relaisdaten (JSON)
-├── docker/               # Docker-Konfiguration
-└── .github/workflows/    # CI/CD Pipelines
+│   │   ├── Map/          # Map components (Leaflet)
+│   │   ├── Sidebar/      # Filters, search, repeater list
+│   │   └── UI/           # General UI components
+│   ├── hooks/            # React hooks
+│   ├── types/            # TypeScript type definitions
+│   └── utils/            # Utility functions
+├── scripts/              # Python scraper
+│   └── sources/          # Data sources (OEVSV, Repeaterbook)
+├── data/                 # Repeater data (JSON)
+├── docker/               # Docker configuration
+└── .github/workflows/    # CI/CD pipelines
 ```
 
-## Technologie-Stack
+## Technology Stack
 
 ### Frontend
-- React 18 mit TypeScript
-- Vite (Build Tool)
-- Leaflet / React-Leaflet (Karten)
+- React 18 with TypeScript
+- Vite (Build tool)
+- Leaflet / React-Leaflet (Maps)
 - Tailwind CSS (Styling)
 
 ### Backend / Scraper
 - Python 3.12
-- BeautifulSoup4 (Web Scraping)
-- Requests (HTTP Client)
+- BeautifulSoup4 (Web scraping)
+- Requests (HTTP client)
 
-### Infrastruktur
-- Docker (Multi-Stage Builds)
-- Nginx (Production Server)
+### Infrastructure
+- Docker (Multi-stage builds)
+- Nginx (Production server)
 - GitHub Actions (CI/CD)
 
-## Datenquellen
+## Data Sources
 
-Die Relaisdaten werden aus folgenden Quellen aggregiert:
+Repeater data is aggregated from the following sources:
 
-1. **ÖVSV** - Österreichischer Versuchssenderverband
-2. **Repeaterbook** - Internationale Repeater-Datenbank
+1. **OEVSV** - Austrian Amateur Radio Association (Österreichischer Versuchssenderverband)
+2. **Repeaterbook** - International repeater database
 
-Das Update erfolgt automatisch wöchentlich via GitHub Actions.
+Updates are performed automatically every week via GitHub Actions.
 
-### Manuelles Daten-Update
+### Manual Data Update
 
 ```bash
-# Mit Python direkt
+# With Python directly
 cd scripts
 pip install -r requirements.txt
 python update_relais.py
 
-# Mit Docker
+# With Docker
 docker compose run --rm updater
 ```
 
-## Konfiguration
+## Configuration
 
 ### Docker Compose Override
 
-Für lokale Anpassungen:
+For local customizations:
 
 ```bash
 cp docker-compose.override.yml.example docker-compose.override.yml
-# Datei nach Bedarf anpassen
+# Edit file as needed
 ```
 
-### Umgebungsvariablen (Updater)
+### Environment Variables (Updater)
 
-| Variable | Beschreibung | Standard |
-|----------|--------------|----------|
-| `OUTPUT_DIR` | Ausgabeverzeichnis für JSON | `/data` |
-| `SCHEDULE` | Cron-Schedule für Updates | `0 3 * * 0` (Sonntag 03:00) |
-| `ONE_SHOT` | Einmaliger Lauf ohne Cron | `false` |
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `OUTPUT_DIR` | Output directory for JSON | `/data` |
+| `SCHEDULE` | Cron schedule for updates | `0 3 * * 0` (Sunday 03:00) |
+| `ONE_SHOT` | Single run without cron | `false` |
 
-## Entwicklung
+## Development
 
-### Voraussetzungen
+### Prerequisites
 
 - Node.js 20+
 - npm 9+
-- Python 3.12+ (für Scraper)
+- Python 3.12+ (for scraper)
 - Docker & Docker Compose (optional)
 
 ### Scripts
 
 ```bash
-npm run dev      # Development Server
-npm run build    # Production Build
-npm run preview  # Production Preview
+npm run dev      # Development server
+npm run build    # Production build
+npm run preview  # Production preview
 npm run lint     # ESLint
 ```
 
-### Code-Stil
+### Code Style
 
-- TypeScript mit strikten Typen
-- ESLint für Code-Qualität
-- Prettier für Formatierung (empfohlen)
+- TypeScript with strict types
+- ESLint for code quality
+- Prettier for formatting (recommended)
 
 ## Deployment
 
 ### GitHub Container Registry
 
-Docker Images werden automatisch gebaut und zu GHCR gepusht:
+Docker images are automatically built and pushed to GHCR:
 
 ```bash
 docker pull ghcr.io/OWNER/relaisblick:latest
 docker pull ghcr.io/OWNER/relaisblick-updater:latest
 ```
 
-### Eigenes Deployment
+### Self-Hosted Deployment
 
-1. Repository klonen
-2. `docker-compose.override.yml` erstellen
-3. `docker compose up -d`
+1. Clone repository
+2. Create `docker-compose.override.yml`
+3. Run `docker compose up -d`
 
-Für automatische Deployments siehe `.github/workflows/deploy.yml`.
+For automatic deployments, see `.github/workflows/deploy.yml`.
 
-## Lizenz
+## License
 
-MIT License - siehe LICENSE Datei.
+MIT License - see LICENSE file.
 
-## Mitwirken
+## Contributing
 
-Beiträge sind willkommen! Bitte erstelle einen Issue oder Pull Request.
+Contributions are welcome! Please create an issue or pull request.
 
-## Kontakt
+## Contact
 
-Bei Fragen oder Problemen bitte ein GitHub Issue erstellen.
+For questions or issues, please create a GitHub issue.
 
 ---
 
