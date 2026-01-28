@@ -1,0 +1,15 @@
+# Example docker-compose override file
+# Copy this to docker-compose.override.yml and modify as needed
+# This file is gitignored and will be merged with docker-compose.yml
+
+services:
+  web:
+    ports:
+      - "8080:80"  # Change external port
+    # environment:
+    #   - CUSTOM_VAR=value
+
+  updater:
+    environment:
+      - SCHEDULE=0 */6 * * *  # Update every 6 hours instead of weekly
+      # - ONE_SHOT=true  # Run once and exit

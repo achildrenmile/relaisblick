@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker files (avoid recursive copies)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Documentation
+*.md
+
+# Python virtual environments
+env/
+venv/
+.venv/
+__pycache__/
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+
+# GitHub
+.github/
