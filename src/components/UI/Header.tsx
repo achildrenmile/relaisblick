@@ -21,7 +21,7 @@ export function Header({ relaisCount, filteredCount, lastUpdate }: HeaderProps) 
 
   return (
     <header className="bg-primary-700 text-white shadow-lg">
-      <div className="px-4 py-3">
+      <div className="px-4 py-2">
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <ParentSiteLogo />

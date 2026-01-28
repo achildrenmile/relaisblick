@@ -17,7 +17,7 @@ export function ParentSiteLogo() {
       <img
         src={config.parentSiteLogo}
         alt={config.parentSiteName || 'Parent Site'}
-        className="h-20 sm:h-[150px] w-auto object-contain"
+        className="h-10 sm:h-12 w-auto object-contain"
       />
     </a>
   );
