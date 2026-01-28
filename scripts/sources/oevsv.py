@@ -1,23 +1,21 @@
 """
-ÖVSV (Österreichischer Versuchssenderverband) Scraper
+ÖVSV (Österreichischer Versuchssenderverband) API Client
 
-Scrapes relay data from the official ÖVSV website.
+Fetches relay data from the official ÖVSV repeater API.
 """
 
-import re
 import logging
 from typing import Optional
 from dataclasses import dataclass
 
 import requests
-from bs4 import BeautifulSoup
 
 logger = logging.getLogger(__name__)
 
 
 @dataclass
 class RelaisInfo:
-    """Parsed relay information from ÖVSV."""
+    """Parsed relay information from ÖVSV API."""
     rufzeichen: str
     standort: str
     bundesland: str
@@ -41,183 +39,238 @@ class RelaisInfo:
 
 
 class OevsvScraper:
-    """Scraper for ÖVSV relay listings."""
+    """Client for ÖVSV repeater API."""
 
-    BASE_URL = "https://www.oevsv.at"
-    RELAIS_URL = f"{BASE_URL}/funkbetrieb/amateurfunkfrequenzen/ukw-relais"
+    API_URL = "https://repeater.oevsv.at/api/trx_list"
 
     BUNDESLAND_MAP = {
-        "W": "Wien",
-        "N": "Niederösterreich",
-        "O": "Oberösterreich",
-        "ST": "Steiermark",
-        "K": "Kärnten",
-        "S": "Salzburg",
-        "T": "Tirol",
-        "V": "Vorarlberg",
-        "B": "Burgenland",
+        "Wien": "Wien",
+        "Niederösterreich": "Niederösterreich",
+        "Oberösterreich": "Oberösterreich",
+        "Steiermark": "Steiermark",
+        "Kärnten": "Kärnten",
+        "Salzburg": "Salzburg",
+        "Tirol": "Tirol",
+        "Vorarlberg": "Vorarlberg",
+        "Burgenland": "Burgenland",
     }
 
     def __init__(self, timeout: int = 30):
         self.timeout = timeout
         self.session = requests.Session()
         self.session.headers.update({
-            "User-Agent": "Relaisblick/1.0 (Amateur Radio Relay Map)"
+            "User-Agent": "Relaisblick/1.0 (Amateur Radio Relay Map)",
+            "Accept": "application/json",
         })
 
     def fetch_relais(self) -> list[RelaisInfo]:
-        """Fetch all relays from ÖVSV website."""
-        logger.info("Fetching relay data from ÖVSV...")
+        """Fetch all relays from ÖVSV API."""
+        logger.info("Fetching relay data from ÖVSV API...")
 
         try:
-            response = self.session.get(self.RELAIS_URL, timeout=self.timeout)
+            response = self.session.get(self.API_URL, timeout=self.timeout)
             response.raise_for_status()
+            data = response.json()
         except requests.RequestException as e:
             logger.error(f"Failed to fetch ÖVSV data: {e}")
             return []
+        except ValueError as e:
+            logger.error(f"Failed to parse ÖVSV JSON: {e}")
+            return []
 
-        return self._parse_relais_page(response.text)
+        return self._parse_response(data)
 
-    def _parse_relais_page(self, html: str) -> list[RelaisInfo]:
-        """Parse the relay listing HTML page."""
-        soup = BeautifulSoup(html, "lxml")
+    def _parse_response(self, data: list) -> list[RelaisInfo]:
+        """Parse API response into RelaisInfo objects."""
         relais_list = []
 
-        # Find relay tables (structure may vary)
-        tables = soup.find_all("table", class_="relais-table")
+        for item in data:
+            try:
+                relais = self._parse_item(item)
+                if relais:
+                    relais_list.append(relais)
+            except Exception as e:
+                logger.warning(f"Failed to parse item {item.get('callsign', 'unknown')}: {e}")
 
-        for table in tables:
-            rows = table.find_all("tr")[1:]  # Skip header
-            for row in rows:
-                try:
-                    relais = self._parse_row(row)
-                    if relais:
-                        relais_list.append(relais)
-                except Exception as e:
-                    logger.warning(f"Failed to parse row: {e}")
-
-        logger.info(f"Parsed {len(relais_list)} relays from ÖVSV")
+        logger.info(f"Parsed {len(relais_list)} relays from ÖVSV API")
         return relais_list
 
-    def _parse_row(self, row) -> Optional[RelaisInfo]:
-        """Parse a single table row into RelaisInfo."""
-        cells = row.find_all("td")
-        if len(cells) < 6:
+    def _parse_item(self, item: dict) -> Optional[RelaisInfo]:
+        """Parse a single API item into RelaisInfo."""
+        # Get callsign
+        callsign = item.get("callsign", "").upper()
+        if not callsign or not callsign.startswith("OE"):
             return None
 
-        rufzeichen = cells[0].get_text(strip=True).upper()
-        if not rufzeichen.startswith("OE"):
+        # Skip digipeaters and beacons for now (focus on voice repeaters)
+        station_type = item.get("type_of_station", "")
+        if station_type in ("digipeater", "beacon"):
             return None
 
-        # Extract bundesland from callsign (OE1... = Wien, etc.)
-        bl_code = self._extract_bundesland_code(rufzeichen)
-        bundesland = self.BUNDESLAND_MAP.get(bl_code, "Wien")
+        # Get frequencies
+        tx_freq = item.get("frequency_tx")
+        rx_freq = item.get("frequency_rx")
 
-        standort = cells[1].get_text(strip=True)
-
-        # Parse frequencies
-        tx_text = cells[2].get_text(strip=True)
-        rx_text = cells[3].get_text(strip=True)
+        if not tx_freq or not rx_freq:
+            return None
 
         try:
-            tx_frequenz = self._parse_frequency(tx_text)
-            rx_frequenz = self._parse_frequency(rx_text)
-        except ValueError:
+            tx_freq = float(tx_freq)
+            rx_freq = float(rx_freq)
+        except (ValueError, TypeError):
             return None
 
-        shift = (rx_frequenz - tx_frequenz) * 1000  # Convert to kHz
+        # Calculate shift in kHz
+        shift = (rx_freq - tx_freq) * 1000
+
+        # Get location
+        standort = item.get("site_name", "Unbekannt")
+        city = item.get("city", "")
+        if city and city != standort:
+            standort = f"{standort}, {city}"
+
+        # Get bundesland
+        bundesland = item.get("bl", "Wien")
+        bundesland = self.BUNDESLAND_MAP.get(bundesland, bundesland)
+
+        # Get coordinates
+        lat = item.get("latitude")
+        lng = item.get("longitude")
+        if not lat or not lng:
+            return None
+
+        try:
+            lat = float(lat)
+            lng = float(lng)
+        except (ValueError, TypeError):
+            return None
 
         # Determine band
-        band = self._determine_band(tx_frequenz)
+        band = item.get("band", "")
+        band = self._normalize_band(band)
 
-        # Parse type (FM, DMR, D-STAR, etc.)
-        typ = cells[4].get_text(strip=True).upper()
-        typ = self._normalize_type(typ)
+        # Determine type
+        typ = self._determine_type(item)
 
-        # Parse coordinates if available
-        lat, lng = self._extract_coordinates(row)
+        # Get CTCSS
+        ctcss = None
+        ctcss_tx = item.get("ctcss_tx")
+        if ctcss_tx:
+            try:
+                ctcss = float(ctcss_tx)
+            except (ValueError, TypeError):
+                pass
+
+        # Get EchoLink
+        echolink = None
+        echolink_id = item.get("echolink_id")
+        if echolink_id:
+            try:
+                echolink = int(echolink_id)
+            except (ValueError, TypeError):
+                pass
+
+        # Get DMR ID
+        dmr_id = None
+        digital_id = item.get("digital_id")
+        if digital_id and item.get("dmr"):
+            try:
+                dmr_id = int(digital_id)
+            except (ValueError, TypeError):
+                pass
+
+        # Get altitude
+        seehoehe = None
+        sea_level = item.get("sea_level")
+        if sea_level:
+            try:
+                seehoehe = int(sea_level)
+            except (ValueError, TypeError):
+                pass
+
+        # Determine status
+        status_str = item.get("status", "").lower()
+        if status_str == "active":
+            status = "aktiv"
+        elif status_str in ("inactive", "off"):
+            status = "inaktiv"
+        else:
+            status = "unbekannt"
+
+        # Get sysop/operator
+        betreiber = item.get("sysop")
+
+        # Get comment
+        bemerkung = item.get("comment")
 
         return RelaisInfo(
-            rufzeichen=rufzeichen,
+            rufzeichen=callsign,
             standort=standort,
             bundesland=bundesland,
             lat=lat,
             lng=lng,
             typ=typ,
             band=band,
-            tx_frequenz=tx_frequenz,
-            rx_frequenz=rx_frequenz,
+            tx_frequenz=tx_freq,
+            rx_frequenz=rx_freq,
             shift=shift,
+            ctcss=ctcss,
+            echolink=echolink,
+            dmr_id=dmr_id,
+            betreiber=betreiber,
+            seehoehe=seehoehe,
+            status=status,
+            bemerkung=bemerkung,
         )
 
-    def _extract_bundesland_code(self, rufzeichen: str) -> str:
-        """Extract bundesland code from callsign."""
-        match = re.match(r"OE(\d)", rufzeichen)
-        if match:
-            code_map = {
-                "1": "W", "2": "S", "3": "N", "4": "B",
-                "5": "O", "6": "ST", "7": "T", "8": "K", "9": "V"
-            }
-            return code_map.get(match.group(1), "W")
-        return "W"
+    def _normalize_band(self, band: str) -> str:
+        """Normalize band string."""
+        band = band.lower().strip()
+        band_map = {
+            "10m": "10m",
+            "6m": "6m",
+            "2m": "2m",
+            "70cm": "70cm",
+            "23cm": "23cm",
+            "13cm": "13cm",
+            "9cm": "9cm",
+            "6cm": "6cm",
+            "3cm": "3cm",
+        }
+        return band_map.get(band, band)
 
-    def _parse_frequency(self, text: str) -> float:
-        """Parse frequency text to MHz float."""
-        # Remove common suffixes and clean
-        text = re.sub(r"[MHz\s]", "", text)
-        text = text.replace(",", ".")
-        return float(text)
-
-    def _determine_band(self, freq_mhz: float) -> str:
-        """Determine amateur band from frequency."""
-        if 28 <= freq_mhz < 30:
-            return "10m"
-        elif 50 <= freq_mhz < 54:
-            return "6m"
-        elif 144 <= freq_mhz < 148:
-            return "2m"
-        elif 430 <= freq_mhz < 440:
-            return "70cm"
-        elif 1240 <= freq_mhz < 1300:
-            return "23cm"
-        elif 2300 <= freq_mhz < 2450:
-            return "13cm"
-        elif 3400 <= freq_mhz < 3500:
-            return "9cm"
-        elif 5650 <= freq_mhz < 5850:
-            return "6cm"
-        elif 10000 <= freq_mhz < 10500:
-            return "3cm"
-        return "2m"  # Default
-
-    def _normalize_type(self, typ: str) -> str:
-        """Normalize relay type string."""
-        typ = typ.upper()
-        if "DMR" in typ:
+    def _determine_type(self, item: dict) -> str:
+        """Determine relay type from item data."""
+        # Check for digital modes
+        if item.get("dmr"):
             return "DMR"
-        elif "D-STAR" in typ or "DSTAR" in typ:
+        if item.get("dstar"):
             return "D-STAR"
-        elif "C4FM" in typ or "FUSION" in typ:
+        if item.get("c4fm"):
             return "C4FM"
-        elif "TETRA" in typ:
+        if item.get("tetra"):
             return "TETRA"
-        elif "ATV" in typ:
+
+        # Check station type
+        station_type = item.get("type_of_station", "").lower()
+        if "atv" in station_type:
             return "ATV"
-        elif "BAKE" in typ or "BEACON" in typ:
+        if "beacon" in station_type or "bake" in station_type:
             return "Bake"
+
+        # Check for FM
+        if item.get("fm"):
+            return "FM"
+
+        # Check other_mode
+        if item.get("other_mode"):
+            other_name = item.get("other_mode_name", "").upper()
+            if "DMR" in other_name:
+                return "DMR"
+            if "DSTAR" in other_name or "D-STAR" in other_name:
+                return "D-STAR"
+            if "C4FM" in other_name or "FUSION" in other_name:
+                return "C4FM"
+
+        # Default to FM for voice repeaters
         return "FM"
-
-    def _extract_coordinates(self, row) -> tuple[float, float]:
-        """Extract coordinates from row data or data attributes."""
-        # Check for data attributes
-        lat = row.get("data-lat")
-        lng = row.get("data-lng")
-
-        if lat and lng:
-            try:
-                return float(lat), float(lng)
-            except ValueError:
-                pass
-
-        # Default to Austria center if not found
-        return 47.5, 13.5
