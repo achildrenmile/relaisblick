@@ -4,6 +4,7 @@ import { Header } from './components/UI/Header';
 import { Footer } from './components/UI/Footer';
 import { LoadingSpinner } from './components/UI/LoadingSpinner';
 import { ErrorMessage } from './components/UI/ErrorMessage';
+import { LegalModal } from './components/UI/LegalModal';
 import { SearchBar } from './components/Sidebar/SearchBar';
 import { FilterPanel } from './components/Sidebar/FilterPanel';
 import { RelaisList } from './components/Sidebar/RelaisList';
@@ -23,6 +24,7 @@ function App() {
   } = useRelaisData();
 
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [legalModal, setLegalModal] = useState<'imprint' | 'privacy' | null>(null);
 
   if (loading) {
     return <LoadingSpinner />;
@@ -121,7 +123,16 @@ function App() {
         </main>
       </div>
 
-      <Footer lastUpdate={data?.lastUpdate} />
+      <Footer
+        lastUpdate={data?.lastUpdate}
+        onOpenImprint={() => setLegalModal('imprint')}
+        onOpenPrivacy={() => setLegalModal('privacy')}
+      />
+
+      {/* Legal Modals */}
+      {legalModal && (
+        <LegalModal type={legalModal} onClose={() => setLegalModal(null)} />
+      )}
     </div>
   );
 }

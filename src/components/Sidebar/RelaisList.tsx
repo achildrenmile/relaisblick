@@ -1,3 +1,4 @@
+import { useI18n } from '../../i18n';
 import { Relais, TYP_FARBEN, BAND_FARBEN } from '../../types/relais';
 import { formatFrequency, formatShift } from '../../utils/formatters';
 
@@ -12,12 +13,14 @@ export function RelaisList({
   selectedRelais,
   onSelectRelais,
 }: RelaisListProps) {
+  const { t } = useI18n();
+
   if (relais.length === 0) {
     return (
       <div className="text-center py-8 text-gray-500">
         <div className="text-3xl mb-2">📭</div>
-        <p>Keine Relais gefunden</p>
-        <p className="text-sm">Versuche die Filter anzupassen</p>
+        <p>{t.noRelaisFound}</p>
+        <p className="text-sm">{t.tryAdjustFilters}</p>
       </div>
     );
   }

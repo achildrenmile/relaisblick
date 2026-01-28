@@ -1,14 +1,18 @@
+import { useI18n } from '../../i18n';
+
 interface SearchBarProps {
   value: string;
   onChange: (value: string) => void;
 }
 
 export function SearchBar({ value, onChange }: SearchBarProps) {
+  const { t } = useI18n();
+
   return (
     <div className="relative">
       <input
         type="text"
-        placeholder="Suche nach Rufzeichen, Standort..."
+        placeholder={t.searchPlaceholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"

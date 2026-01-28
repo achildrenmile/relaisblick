@@ -1,3 +1,4 @@
+import { useI18n } from '../../i18n';
 import {
   FilterState,
   Band,
@@ -16,6 +17,8 @@ interface FilterPanelProps {
 }
 
 export function FilterPanel({ filters, onFilterChange }: FilterPanelProps) {
+  const { t } = useI18n();
+
   const toggleBand = (band: Band) => {
     const newBands = filters.band.includes(band)
       ? filters.band.filter((b) => b !== band)
@@ -54,21 +57,27 @@ export function FilterPanel({ filters, onFilterChange }: FilterPanelProps) {
     });
   };
 
+  const statusLabels: Record<'aktiv' | 'inaktiv' | 'unbekannt', string> = {
+    aktiv: t.active,
+    inaktiv: t.inactive,
+    unbekannt: t.unknown,
+  };
+
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <h3 className="font-semibold text-gray-700">Filter</h3>
+        <h3 className="font-semibold text-gray-700">{t.filter}</h3>
         <button
           onClick={resetFilters}
           className="text-sm text-primary-600 hover:text-primary-800"
         >
-          Zurücksetzen
+          {t.reset}
         </button>
       </div>
 
       {/* Band Filter */}
       <div>
-        <h4 className="text-sm font-medium text-gray-600 mb-2">Band</h4>
+        <h4 className="text-sm font-medium text-gray-600 mb-2">{t.band}</h4>
         <div className="flex flex-wrap gap-1">
           {BANDS.map((band) => (
             <button
@@ -93,7 +102,7 @@ export function FilterPanel({ filters, onFilterChange }: FilterPanelProps) {
 
       {/* Typ Filter */}
       <div>
-        <h4 className="text-sm font-medium text-gray-600 mb-2">Typ</h4>
+        <h4 className="text-sm font-medium text-gray-600 mb-2">{t.type}</h4>
         <div className="flex flex-wrap gap-1">
           {RELAIS_TYPEN.map((typ) => (
             <button
@@ -118,7 +127,7 @@ export function FilterPanel({ filters, onFilterChange }: FilterPanelProps) {
 
       {/* Bundesland Filter */}
       <div>
-        <h4 className="text-sm font-medium text-gray-600 mb-2">Bundesland</h4>
+        <h4 className="text-sm font-medium text-gray-600 mb-2">{t.state}</h4>
         <div className="flex flex-wrap gap-1">
           {BUNDESLAENDER.map((bl) => (
             <button
@@ -138,7 +147,7 @@ export function FilterPanel({ filters, onFilterChange }: FilterPanelProps) {
 
       {/* Status Filter */}
       <div>
-        <h4 className="text-sm font-medium text-gray-600 mb-2">Status</h4>
+        <h4 className="text-sm font-medium text-gray-600 mb-2">{t.status}</h4>
         <div className="flex flex-wrap gap-1">
           {(['aktiv', 'inaktiv', 'unbekannt'] as const).map((status) => (
             <button
@@ -154,7 +163,7 @@ export function FilterPanel({ filters, onFilterChange }: FilterPanelProps) {
                   : 'text-gray-600 border-gray-300 hover:border-gray-400'
               }`}
             >
-              {status}
+              {statusLabels[status]}
             </button>
           ))}
         </div>

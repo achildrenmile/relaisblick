@@ -1,14 +1,21 @@
+import { useI18n } from '../../i18n';
+
 interface FooterProps {
   lastUpdate?: string;
+  onOpenImprint: () => void;
+  onOpenPrivacy: () => void;
 }
 
-export function Footer({ lastUpdate }: FooterProps) {
+export function Footer({ lastUpdate, onOpenImprint, onOpenPrivacy }: FooterProps) {
+  const { t, language } = useI18n();
+  const dateLocale = language === 'de' ? 'de-AT' : 'en-GB';
+
   return (
     <footer className="bg-gray-100 border-t border-gray-200 text-xs text-gray-600">
       <div className="px-4 py-3">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
           <div>
-            <span className="font-medium">Datenquellen:</span>{' '}
+            <span className="font-medium">{t.dataSources}:</span>{' '}
             <a
               href="https://repeater.oevsv.at"
               target="_blank"
@@ -48,35 +55,36 @@ export function Footer({ lastUpdate }: FooterProps) {
           </div>
           {lastUpdate && (
             <div className="text-gray-500">
-              Stand: {new Date(lastUpdate).toLocaleDateString('de-AT')}
+              {t.lastUpdate.replace('{date}', new Date(lastUpdate).toLocaleDateString(dateLocale))}
             </div>
           )}
         </div>
         <div className="mt-2 text-gray-500 text-[10px] leading-relaxed">
-          <strong>Disclaimer:</strong> Die FM-Relaisdaten stammen vom{' '}
-          <a href="https://repeater.oevsv.at" target="_blank" rel="noopener noreferrer" className="underline">
-            ÖVSV UKW-Referat (repeater.oevsv.at)
-          </a>
-          . Die Daten für DMR, D-STAR und C4FM stammen von OE8VIK (Michi) via{' '}
-          <a href="https://dmraustria.at" target="_blank" rel="noopener noreferrer" className="underline">
-            dmraustria.at
-          </a>
-          ,{' '}
-          <a href="https://dstaraustria.at" target="_blank" rel="noopener noreferrer" className="underline">
-            dstaraustria.at
-          </a>
-          {' und '}
-          <a href="https://c4fmaustria.at" target="_blank" rel="noopener noreferrer" className="underline">
-            c4fmaustria.at
-          </a>
-          . Besten Dank für die Bereitstellung der Daten! Die Daten werden wöchentlich automatisch aktualisiert. Alle Angaben ohne Gewähr. Bei Fehlern oder Änderungswünschen bitte direkt an die jeweilige Datenquelle wenden.
+          <strong>{t.disclaimer}:</strong> {t.disclaimerText} {t.thanksForData} {t.weeklyUpdate} {t.noGuarantee}
         </div>
-        <div className="mt-3 pt-3 border-t border-gray-300 text-gray-500 text-[10px] leading-relaxed">
-          <strong>Impressum:</strong> Angaben gemäß § 5 ECG und § 25 MedienG ·
-          Betreiber: Michael Linder, OE8YML ·
-          Nötsch 219, 9611 Nötsch, Österreich ·
-          Kontakt:{' '}
-          <a href="mailto:oe8yml@rednil.at" className="underline">oe8yml@rednil.at</a>
+        <div className="mt-3 pt-3 border-t border-gray-300 flex flex-wrap items-center gap-x-2 gap-y-1 text-gray-500 text-[10px]">
+          <button
+            onClick={onOpenImprint}
+            className="text-primary-600 hover:underline"
+          >
+            {t.imprint}
+          </button>
+          <span>|</span>
+          <button
+            onClick={onOpenPrivacy}
+            className="text-primary-600 hover:underline"
+          >
+            {t.privacy}
+          </button>
+          <span>|</span>
+          <a
+            href="https://github.com/achildrenmile/relaisblick"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-600 hover:underline"
+          >
+            GitHub
+          </a>
         </div>
       </div>
     </footer>

@@ -1,8 +1,8 @@
-interface LoadingSpinnerProps {
-  message?: string;
-}
+import { useI18n } from '../../i18n';
 
-export function LoadingSpinner({ message = 'Lade Daten...' }: LoadingSpinnerProps) {
+export function LoadingSpinner() {
+  const { t } = useI18n();
+
   return (
     <div className="flex flex-col items-center justify-center h-full bg-gray-50">
       <div className="relative">
@@ -11,7 +11,7 @@ export function LoadingSpinner({ message = 'Lade Daten...' }: LoadingSpinnerProp
           <span className="text-2xl">📡</span>
         </div>
       </div>
-      <p className="mt-4 text-gray-600">{message}</p>
+      <p className="mt-4 text-gray-600">{t.loadingData}</p>
     </div>
   );
 }
