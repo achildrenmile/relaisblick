@@ -126,3 +126,25 @@ export function formatAltitude(altitude: number | undefined): string {
   if (altitude === undefined) return '-';
   return `${altitude.toLocaleString('de-AT')} m`;
 }
+
+/**
+ * Berechnet das nächste Update-Datum (Sonntag 03:00 UTC)
+ */
+export function getNextUpdateDate(): Date {
+  const now = new Date();
+  const nextSunday = new Date(now);
+
+  // Finde den nächsten Sonntag
+  const daysUntilSunday = (7 - now.getUTCDay()) % 7;
+
+  // Wenn heute Sonntag ist und es noch vor 03:00 UTC ist, ist das Update heute
+  if (daysUntilSunday === 0 && now.getUTCHours() < 3) {
+    nextSunday.setUTCHours(3, 0, 0, 0);
+  } else {
+    // Sonst nächsten Sonntag
+    nextSunday.setUTCDate(now.getUTCDate() + (daysUntilSunday === 0 ? 7 : daysUntilSunday));
+    nextSunday.setUTCHours(3, 0, 0, 0);
+  }
+
+  return nextSunday;
+}

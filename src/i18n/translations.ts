@@ -6,6 +6,7 @@ export interface Translations {
   appSubtitle: string;
   relaisCount: string;
   lastUpdate: string;
+  nextUpdate: string;
 
   // Search
   searchPlaceholder: string;
@@ -100,6 +101,7 @@ export const translations: Record<Language, Translations> = {
     appSubtitle: 'Österreichische Relais-Karte',
     relaisCount: '{filtered} von {total} Relais',
     lastUpdate: 'Stand: {date}',
+    nextUpdate: 'Nächstes Update: {date}',
 
     // Search
     searchPlaceholder: 'Suche nach Rufzeichen, Standort...',
@@ -192,6 +194,7 @@ export const translations: Record<Language, Translations> = {
     appSubtitle: 'Austrian Repeater Map',
     relaisCount: '{filtered} of {total} repeaters',
     lastUpdate: 'Updated: {date}',
+    nextUpdate: 'Next update: {date}',
 
     // Search
     searchPlaceholder: 'Search by callsign, location...',

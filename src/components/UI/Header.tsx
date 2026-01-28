@@ -1,6 +1,7 @@
 import { useI18n } from '../../i18n';
 import { LanguageSelector } from './LanguageSelector';
 import { ParentSiteLogo } from './ParentSiteLogo';
+import { getNextUpdateDate } from '../../utils/formatters';
 
 interface HeaderProps {
   relaisCount: number;
@@ -16,6 +17,7 @@ export function Header({ relaisCount, filteredCount, lastUpdate }: HeaderProps) 
     .replace('{total}', String(relaisCount));
 
   const dateLocale = language === 'de' ? 'de-AT' : 'en-GB';
+  const nextUpdate = getNextUpdateDate();
 
   return (
     <header className="bg-primary-700 text-white shadow-lg">
@@ -44,6 +46,9 @@ export function Header({ relaisCount, filteredCount, lastUpdate }: HeaderProps) 
                   {t.lastUpdate.replace('{date}', new Date(lastUpdate).toLocaleDateString(dateLocale))}
                 </div>
               )}
+              <div className="text-primary-300 text-xs">
+                {t.nextUpdate.replace('{date}', nextUpdate.toLocaleDateString(dateLocale))}
+              </div>
             </div>
           </div>
         </div>
