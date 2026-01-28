@@ -71,6 +71,13 @@ export function Footer({ lastUpdate }: FooterProps) {
           </a>
           . Besten Dank für die Bereitstellung der Daten! Die Daten werden wöchentlich automatisch aktualisiert. Alle Angaben ohne Gewähr. Bei Fehlern oder Änderungswünschen bitte direkt an die jeweilige Datenquelle wenden.
         </div>
+        <div className="mt-3 pt-3 border-t border-gray-300 text-gray-500 text-[10px] leading-relaxed">
+          <strong>Impressum:</strong> Angaben gemäß § 5 ECG und § 25 MedienG ·
+          Betreiber: Michael Linder, OE8YML ·
+          Nötsch 219, 9611 Nötsch, Österreich ·
+          Kontakt:{' '}
+          <a href="mailto:oe8yml@rednil.at" className="underline">oe8yml@rednil.at</a>
+        </div>
       </div>
     </footer>
   );
