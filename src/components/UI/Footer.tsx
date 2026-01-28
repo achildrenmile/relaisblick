@@ -69,7 +69,7 @@ export function Footer({ lastUpdate }: FooterProps) {
           <a href="https://c4fmaustria.at" target="_blank" rel="noopener noreferrer" className="underline">
             c4fmaustria.at
           </a>
-          . Besten Dank für die Bereitstellung der Daten! Alle Angaben ohne Gewähr. Bei Fehlern oder Änderungswünschen bitte direkt an die jeweilige Datenquelle wenden.
+          . Besten Dank für die Bereitstellung der Daten! Die Daten werden wöchentlich automatisch aktualisiert. Alle Angaben ohne Gewähr. Bei Fehlern oder Änderungswünschen bitte direkt an die jeweilige Datenquelle wenden.
         </div>
       </div>
     </footer>
