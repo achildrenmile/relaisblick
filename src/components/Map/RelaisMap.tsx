@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { MapContainer, TileLayer, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, useMap, AttributionControl } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Relais } from '../../types/relais';
 import { RelaisMarker } from './RelaisMarker';
@@ -16,6 +16,11 @@ const AUSTRIA_BOUNDS: [[number, number], [number, number]] = [
   [46.3, 9.5],
   [49.0, 17.2],
 ];
+
+// Use proxy in production, direct URL in development
+const TILE_URL = import.meta.env.PROD
+  ? '/tiles/{s}/{z}/{x}/{y}.png'
+  : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
 function MapController({ selectedRelais }: { selectedRelais: Relais | null }) {
   const map = useMap();
@@ -49,10 +54,12 @@ export function RelaisMap({
       minZoom={7}
       maxZoom={18}
       className="w-full h-full"
+      attributionControl={false}
     >
+      <AttributionControl position="bottomright" prefix={false} />
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url={TILE_URL}
       />
       <MapController selectedRelais={selectedRelais} />
       {relais.map((r) => (

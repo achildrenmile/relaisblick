@@ -10,7 +10,7 @@ export function Header({ relaisCount, filteredCount, lastUpdate }: HeaderProps) 
       <div className="px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="text-2xl">📡</div>
+            <div className="text-2xl">🇦🇹</div>
             <div>
               <h1 className="text-xl font-bold">Relaisblick</h1>
               <p className="text-sm text-primary-200">

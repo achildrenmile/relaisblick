@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Austrian flag background -->
+  <rect x="0" y="0" width="32" height="10.67" fill="#ED2939"/>
+  <rect x="0" y="10.67" width="32" height="10.67" fill="#FFFFFF"/>
+  <rect x="0" y="21.33" width="32" height="10.67" fill="#ED2939"/>
+  <!-- Radio tower icon -->
+  <g fill="#1e40af" opacity="0.9">
+    <rect x="14" y="8" width="4" height="18" rx="1"/>
+    <path d="M8 12 L16 6 L24 12" stroke="#1e40af" stroke-width="2" fill="none"/>
+    <path d="M10 16 L16 11 L22 16" stroke="#1e40af" stroke-width="2" fill="none"/>
+    <circle cx="16" cy="5" r="2"/>
+  </g>
+</svg>
