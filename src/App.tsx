@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useRelaisData } from './hooks/useRelaisData';
 import { Header } from './components/UI/Header';
+import { Footer } from './components/UI/Footer';
 import { LoadingSpinner } from './components/UI/LoadingSpinner';
 import { ErrorMessage } from './components/UI/ErrorMessage';
 import { SearchBar } from './components/Sidebar/SearchBar';
@@ -119,6 +120,8 @@ function App() {
           />
         </main>
       </div>
+
+      <Footer lastUpdate={data?.lastUpdate} />
     </div>
   );
 }
