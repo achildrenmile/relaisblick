@@ -20,24 +20,25 @@ export function Header({ relaisCount, filteredCount, lastUpdate }: HeaderProps) 
   const nextUpdate = getNextUpdateDate();
 
   return (
-    <header className="bg-primary-700 text-white shadow-lg">
-      <div className="px-4 py-2">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
+    <header className="bg-primary-700 text-white shadow-lg flex-shrink-0">
+      <div className="px-3 sm:px-4 py-2">
+        <div className="flex items-center justify-between gap-2 sm:gap-4">
+          <div className="flex items-center gap-2 sm:gap-4 min-w-0">
             <ParentSiteLogo />
-            <div className="flex items-center gap-3">
-              <img src="/favicon.svg" alt="Relaisblick" className="w-8 h-8" />
-              <div>
-                <h1 className="text-xl font-bold">{t.appTitle}</h1>
-                <p className="text-sm text-primary-200">
+            <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+              <img src="/favicon.svg" alt="Relaisblick" className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" />
+              <div className="min-w-0">
+                <h1 className="text-base sm:text-xl font-bold truncate">{t.appTitle}</h1>
+                <p className="text-xs sm:text-sm text-primary-200 hidden sm:block">
                   {t.appSubtitle}
                 </p>
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
             <LanguageSelector />
-            <div className="text-right text-sm">
+            {/* Stats - hidden on mobile, visible on sm+ */}
+            <div className="hidden sm:block text-right text-sm">
               <div className="text-primary-200">
                 {relaisCountText}
               </div>
@@ -49,6 +50,10 @@ export function Header({ relaisCount, filteredCount, lastUpdate }: HeaderProps) 
               <div className="text-primary-300 text-xs">
                 {t.nextUpdate.replace('{date}', nextUpdate.toLocaleDateString(dateLocale))}
               </div>
+            </div>
+            {/* Compact count for mobile */}
+            <div className="sm:hidden text-right text-xs text-primary-200">
+              {filteredCount}/{relaisCount}
             </div>
           </div>
         </div>

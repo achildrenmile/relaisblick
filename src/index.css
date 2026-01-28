@@ -6,6 +6,28 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
+  overscroll-behavior: none;
+}
+
+/* Support for dynamic viewport height on mobile */
+@supports (height: 100dvh) {
+  html, body, #root {
+    height: 100dvh;
+  }
+}
+
+/* Safe area padding utility */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 /* Leaflet Popup Styles */
@@ -16,6 +38,18 @@ html, body, #root {
 
 .leaflet-popup-content {
   margin: 12px 16px;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .leaflet-popup-content {
+    margin: 8px 12px;
+    font-size: 13px;
+  }
+
+  .leaflet-popup-content-wrapper {
+    max-width: 280px;
+  }
 }
 
 .leaflet-popup-tip {
@@ -47,6 +81,13 @@ html, body, #root {
   background: #94a3b8;
 }
 
+/* Hide scrollbar on mobile for cleaner look */
+@media (max-width: 640px) {
+  .overflow-y-auto::-webkit-scrollbar {
+    width: 3px;
+  }
+}
+
 /* Fix Leaflet z-index issues */
 .leaflet-pane {
   z-index: 1;
@@ -57,9 +98,36 @@ html, body, #root {
   z-index: 500;
 }
 
-/* Mobile adjustments */
+/* Mobile adjustments for Leaflet controls */
 @media (max-width: 1024px) {
   .leaflet-control-zoom {
-    margin-bottom: 60px !important;
+    margin-bottom: 80px !important;
+    margin-left: 10px !important;
   }
+
+  .leaflet-control-attribution {
+    font-size: 9px !important;
+    max-width: 200px;
+  }
+}
+
+/* Touch improvements */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
+/* Prevent text selection on UI elements */
+button, .select-none {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Smooth scrolling in sidebar */
+.overscroll-contain {
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
