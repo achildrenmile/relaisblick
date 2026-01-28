@@ -8,7 +8,7 @@ CONFIG_FILE="/usr/share/nginx/html/config.json"
 # Default values
 DEFAULT_PARENT_SITE_NAME="OERadio"
 DEFAULT_PARENT_SITE_URL="https://oeradio.at"
-DEFAULT_PARENT_SITE_LOGO="https://oeradio.at/wp-content/uploads/2026/01/oeradiologo-300x200.png"
+DEFAULT_PARENT_SITE_LOGO="https://oeradio.at/wp-content/uploads/2026/01/oeradiokl.jpg"
 
 # Use env vars if set, otherwise use defaults
 SITE_NAME="${PARENT_SITE_NAME:-$DEFAULT_PARENT_SITE_NAME}"
