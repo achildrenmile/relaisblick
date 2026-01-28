@@ -1,5 +1,6 @@
 import { useI18n } from '../../i18n';
 import { LanguageSelector } from './LanguageSelector';
+import { ParentSiteLogo } from './ParentSiteLogo';
 
 interface HeaderProps {
   relaisCount: number;
@@ -19,14 +20,17 @@ export function Header({ relaisCount, filteredCount, lastUpdate }: HeaderProps) 
   return (
     <header className="bg-primary-700 text-white shadow-lg">
       <div className="px-4 py-3">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img src="/favicon.svg" alt="Relaisblick" className="w-8 h-8" />
-            <div>
-              <h1 className="text-xl font-bold">{t.appTitle}</h1>
-              <p className="text-sm text-primary-200">
-                {t.appSubtitle}
-              </p>
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center gap-4">
+            <ParentSiteLogo />
+            <div className="flex items-center gap-3">
+              <img src="/favicon.svg" alt="Relaisblick" className="w-8 h-8" />
+              <div>
+                <h1 className="text-xl font-bold">{t.appTitle}</h1>
+                <p className="text-sm text-primary-200">
+                  {t.appSubtitle}
+                </p>
+              </div>
             </div>
           </div>
           <div className="flex items-center gap-4">

@@ -1,4 +1,5 @@
 import { useI18n } from '../../i18n';
+import { useConfig } from '../../hooks/useConfig';
 
 interface FooterProps {
   lastUpdate?: string;
@@ -8,6 +9,7 @@ interface FooterProps {
 
 export function Footer({ lastUpdate, onOpenImprint, onOpenPrivacy }: FooterProps) {
   const { t, language } = useI18n();
+  const { config } = useConfig();
   const dateLocale = language === 'de' ? 'de-AT' : 'en-GB';
 
   return (
@@ -63,6 +65,19 @@ export function Footer({ lastUpdate, onOpenImprint, onOpenPrivacy }: FooterProps
           <strong>{t.disclaimer}:</strong> {t.disclaimerText} {t.thanksForData} {t.weeklyUpdate} {t.noGuarantee}
         </div>
         <div className="mt-3 pt-3 border-t border-gray-300 flex flex-wrap items-center gap-x-2 gap-y-1 text-gray-500 text-[10px]">
+          {config.parentSiteName && config.parentSiteUrl && (
+            <>
+              <a
+                href={config.parentSiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-600 hover:underline"
+              >
+                {t.partOfTools.replace('{name}', config.parentSiteName)}
+              </a>
+              <span>·</span>
+            </>
+          )}
           <button
             onClick={onOpenImprint}
             className="text-primary-600 hover:underline"

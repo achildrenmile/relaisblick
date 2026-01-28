@@ -56,6 +56,9 @@ export interface Translations {
   privacy: string;
   close: string;
 
+  // Parent site
+  partOfTools: string;
+
   // Imprint Modal
   imprintTitle: string;
   imprintInfo: string;
@@ -147,6 +150,9 @@ export const translations: Record<Language, Translations> = {
     privacy: 'Datenschutz',
     close: 'Schließen',
 
+    // Parent site
+    partOfTools: 'Teil von {name} Tools',
+
     // Imprint Modal
     imprintTitle: 'Impressum',
     imprintInfo: 'Angaben gemäß § 5 ECG und § 25 MedienG',
@@ -235,6 +241,9 @@ export const translations: Record<Language, Translations> = {
     imprint: 'Imprint',
     privacy: 'Privacy',
     close: 'Close',
+
+    // Parent site
+    partOfTools: 'Part of {name} Tools',
 
     // Imprint Modal
     imprintTitle: 'Imprint',
