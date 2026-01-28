@@ -18,8 +18,9 @@ const AUSTRIA_BOUNDS: [[number, number], [number, number]] = [
 ];
 
 // Use proxy in production, direct URL in development
+// Added ?v=2 to bust Cloudflare cache after fixing proxy
 const TILE_URL = import.meta.env.PROD
-  ? '/tiles/{s}/{z}/{x}/{y}.png'
+  ? '/tiles/{s}/{z}/{x}/{y}.png?v=2'
   : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
 function MapController({ selectedRelais }: { selectedRelais: Relais | null }) {
