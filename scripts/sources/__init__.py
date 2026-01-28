@@ -6,6 +6,6 @@ Austrian amateur radio relay data sources.
 """
 
 from .oevsv import OevsvScraper
-from .repeaterbook import RepeaterbookClient
+from .oe8vik import OE8VIKScraper
 
-__all__ = ['OevsvScraper', 'RepeaterbookClient']
+__all__ = ['OevsvScraper', 'OE8VIKScraper']

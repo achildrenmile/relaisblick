@@ -1,9 +1,28 @@
 {
   "relais": [
     {
-      "id": "oe1xar",
+      "id": "oe1xar-c4fm-70cm",
       "rufzeichen": "OE1XAR",
-      "standort": "Bisamberg, Wien",
+      "standort": "Wien - Bisamberg",
+      "bundesland": "Wien",
+      "koordinaten": {
+        "lat": 48.3106475,
+        "lng": 16.3827774
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 438.425,
+      "rxFrequenz": 430.825,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "YCS System Fusion II",
+      "seehöhe": 306
+    },
+    {
+      "id": "oe1xar-dmr-70cm",
+      "rufzeichen": "OE1XAR",
+      "standort": "Wien Bisamberg",
       "bundesland": "Wien",
       "koordinaten": {
         "lat": 48.3106475,
@@ -13,16 +32,14 @@
       "band": "70cm",
       "txFrequenz": 438.5,
       "rxFrequenz": 430.9,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE3NSC",
-      "seehöhe": 306,
-      "bemerkung": "TETRA-OE-MASTER",
-      "dmrId": 232100
+      "network": "IPSC2",
+      "seehöhe": 306
     },
     {
-      "id": "oe1xat",
+      "id": "oe1xat-70cm",
       "rufzeichen": "OE1XAT",
       "standort": "Hermannskogel, Wien",
       "bundesland": "Wien",
@@ -43,7 +60,7 @@
       "bemerkung": "OE-Link"
     },
     {
-      "id": "oe1xba",
+      "id": "oe1xba-70cm",
       "rufzeichen": "OE1XBA",
       "standort": "Porrtower, Wien",
       "bundesland": "Wien",
@@ -63,7 +80,7 @@
       "seehöhe": 232
     },
     {
-      "id": "oe1xcs",
+      "id": "oe1xcs-23cm",
       "rufzeichen": "OE1XCS",
       "standort": "Laaerberg Wohntower, Wien",
       "bundesland": "Wien",
@@ -78,33 +95,67 @@
       "shift": -28000.0,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
+      "echolink": 902425,
       "betreiber": "OE4KMU",
       "seehöhe": 235,
-      "bemerkung": "23cm-Link",
-      "echolink": 902425
+      "bemerkung": "23cm-Link"
     },
     {
-      "id": "oe1xds",
-      "rufzeichen": "OE1XDS",
-      "standort": "Stadt/AKH, Wien",
+      "id": "oe1xds g-d-star-70cm",
+      "rufzeichen": "OE1XDS G",
+      "standort": "DCS009A",
       "bundesland": "Wien",
       "koordinaten": {
-        "lat": 48.22075,
-        "lng": 16.34684
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.525,
+      "rxFrequenz": 430.92499999999995,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe1xds g-d-star-2m",
+      "rufzeichen": "OE1XDS G",
+      "standort": "DCS009A",
+      "bundesland": "Wien",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "2m",
+      "txFrequenz": 145.575,
+      "rxFrequenz": 144.975,
+      "shift": -600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe1xds g-d-star-23cm",
+      "rufzeichen": "OE1XDS G",
+      "standort": "DCS009A",
+      "bundesland": "Wien",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
       },
       "typ": "D-STAR",
       "band": "23cm",
-      "txFrequenz": 1298.65,
-      "rxFrequenz": 1270.65,
-      "shift": -28000.0,
+      "txFrequenz": 1298.0,
+      "rxFrequenz": 1270.0,
+      "shift": -28000,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE1AOA",
-      "seehöhe": 198,
-      "bemerkung": "XLX232"
+      "reflector": "DCS009A"
     },
     {
-      "id": "oe1xfu",
+      "id": "oe1xfu-70cm",
       "rufzeichen": "OE1XFU",
       "standort": "Satzberg, Wien",
       "bundesland": "Wien",
@@ -124,7 +175,28 @@
       "seehöhe": 435
     },
     {
-      "id": "oe1xfw",
+      "id": "oe1xfw-2m",
+      "rufzeichen": "OE1XFW",
+      "standort": "Laaerberg Turm, Wien",
+      "bundesland": "Wien",
+      "koordinaten": {
+        "lat": 48.157173,
+        "lng": 16.396717
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.625,
+      "rxFrequenz": 145.025,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "echolink": 3302,
+      "betreiber": "OE3NSC",
+      "seehöhe": 252,
+      "bemerkung": "Coupling 70cm"
+    },
+    {
+      "id": "oe1xfw-70cm",
       "rufzeichen": "OE1XFW",
       "standort": "Laaerberg Turm, Wien",
       "bundesland": "Wien",
@@ -139,13 +211,31 @@
       "shift": -7599.999999999965,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "echolink": 3302,
       "betreiber": "OE3NSC",
       "seehöhe": 252,
       "bemerkung": "Coupling 2m"
     },
     {
-      "id": "oe1xqu",
+      "id": "oe1xqu-23cm",
+      "rufzeichen": "OE1XQU",
+      "standort": "Wienerberg, Wien",
+      "bundesland": "Wien",
+      "koordinaten": {
+        "lat": 48.16803,
+        "lng": 16.3454
+      },
+      "typ": "FM",
+      "band": "23cm",
+      "txFrequenz": 1298.025,
+      "rxFrequenz": 1270.025,
+      "shift": -28000.0,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "betreiber": "OE1MCU",
+      "seehöhe": 223
+    },
+    {
+      "id": "oe1xqu-13cm",
       "rufzeichen": "OE1XQU",
       "standort": "Wienerberg, Wien",
       "bundesland": "Wien",
@@ -160,35 +250,32 @@
       "shift": -49000.0,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
+      "echolink": 254700,
       "betreiber": "OE1MCU",
-      "seehöhe": 223,
-      "bemerkung": "XLX232",
-      "echolink": 254700
+      "seehöhe": 223
     },
     {
-      "id": "oe1xtw",
-      "rufzeichen": "OE1XTW",
-      "standort": "Arsenal Funkturm, Wien",
+      "id": "oe1xqu b-d-star-70cm",
+      "rufzeichen": "OE1XQU B",
+      "standort": "DCS009A",
       "bundesland": "Wien",
       "koordinaten": {
-        "lat": 48.18185,
-        "lng": 16.3908
+        "lat": 47.5,
+        "lng": 13.5
       },
-      "typ": "TETRA",
+      "typ": "D-STAR",
       "band": "70cm",
-      "txFrequenz": 430.4875,
-      "rxFrequenz": 430.4875,
-      "shift": 0.0,
+      "txFrequenz": 438.825,
+      "rxFrequenz": 431.22499999999997,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE1ERR",
-      "seehöhe": 198,
-      "bemerkung": "TETRA-OE-MASTER"
+      "reflector": "DCS009A"
     },
     {
-      "id": "oe1xur",
+      "id": "oe1xur-dmr-70cm",
       "rufzeichen": "OE1XUR",
-      "standort": "Laaerberg Schule, Wien",
+      "standort": "Wien Laaerberg",
       "bundesland": "Wien",
       "koordinaten": {
         "lat": 48.15508,
@@ -197,16 +284,15 @@
       "typ": "DMR",
       "band": "70cm",
       "txFrequenz": 438.45,
-      "rxFrequenz": 430.85,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 430.84999999999997,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232105,
-      "betreiber": "OE1KBC",
+      "network": "IPSC2",
       "seehöhe": 250
     },
     {
-      "id": "oe1xuu",
+      "id": "oe1xuu-70cm",
       "rufzeichen": "OE1XUU",
       "standort": "Kahlenberg, Wien",
       "bundesland": "Wien",
@@ -226,26 +312,7 @@
       "seehöhe": 483
     },
     {
-      "id": "oe1xzs",
-      "rufzeichen": "OE1XZS",
-      "standort": "Penzing/Breitenseerstraße, Wien",
-      "bundesland": "Wien",
-      "koordinaten": {
-        "lat": 48.20296,
-        "lng": 16.29932
-      },
-      "typ": "TETRA",
-      "band": "70cm",
-      "txFrequenz": 430.5625,
-      "rxFrequenz": 430.5625,
-      "shift": 0.0,
-      "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "betreiber": "OE1AZS",
-      "seehöhe": 249
-    },
-    {
-      "id": "oe2xgr",
+      "id": "oe2xgr-2m",
       "rufzeichen": "OE2XGR",
       "standort": "Gernkogel, St. Johann im Pongau",
       "bundesland": "Salzburg",
@@ -253,19 +320,36 @@
         "lat": 47.30755,
         "lng": 13.238225
       },
-      "typ": "D-STAR",
-      "band": "70cm",
-      "txFrequenz": 438.525,
-      "rxFrequenz": 430.925,
-      "shift": -7599.999999999965,
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.7625,
+      "rxFrequenz": 145.1625,
+      "shift": -599.9999999999943,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
       "betreiber": "OE2HFO",
-      "seehöhe": 1785,
-      "bemerkung": "XRF022"
+      "seehöhe": 1785
     },
     {
-      "id": "oe2xhl",
+      "id": "oe2xgr g-d-star-70cm",
+      "rufzeichen": "OE2XGR G",
+      "standort": "XRF022A",
+      "bundesland": "Salzburg",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.525,
+      "rxFrequenz": 430.92499999999995,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "XRF022A"
+    },
+    {
+      "id": "oe2xhl-2m",
       "rufzeichen": "OE2XHL",
       "standort": "Kitzsteinhorn, Zell am See",
       "bundesland": "Salzburg",
@@ -284,7 +368,7 @@
       "seehöhe": 3197
     },
     {
-      "id": "oe2xhm",
+      "id": "oe2xhm-70cm",
       "rufzeichen": "OE2XHM",
       "standort": "Hochkönig Matrashaus, Bischofshofen",
       "bundesland": "Salzburg",
@@ -303,7 +387,7 @@
       "seehöhe": 2939
     },
     {
-      "id": "oe2xnl",
+      "id": "oe2xnl-2m",
       "rufzeichen": "OE2XNL",
       "standort": "Speiereck, Lungau",
       "bundesland": "Salzburg",
@@ -322,7 +406,7 @@
       "seehöhe": 2388
     },
     {
-      "id": "oe2xnm",
+      "id": "oe2xnm-70cm",
       "rufzeichen": "OE2XNM",
       "standort": "Speiereck, Lungau",
       "bundesland": "Salzburg",
@@ -341,9 +425,9 @@
       "seehöhe": 2388
     },
     {
-      "id": "oe2xse",
+      "id": "oe2xse-dmr-70cm",
       "rufzeichen": "OE2XSE",
-      "standort": "Mittersill Ort, Mittersill",
+      "standort": "Mittersill",
       "bundesland": "Salzburg",
       "koordinaten": {
         "lat": 47.287833,
@@ -353,17 +437,16 @@
       "band": "70cm",
       "txFrequenz": 439.0,
       "rxFrequenz": 431.4,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232083,
-      "betreiber": "OE2MNM",
+      "network": "Brandmeister",
       "seehöhe": 949
     },
     {
-      "id": "oe2xsv",
+      "id": "oe2xsv-dmr-70cm",
       "rufzeichen": "OE2XSV",
-      "standort": "Hoher Sonnblick, Heiligenblut",
+      "standort": "Sonnblick",
       "bundesland": "Salzburg",
       "koordinaten": {
         "lat": 47.05397,
@@ -372,16 +455,94 @@
       "typ": "DMR",
       "band": "70cm",
       "txFrequenz": 439.0875,
-      "rxFrequenz": 431.4875,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 431.48749999999995,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232201,
-      "betreiber": "OE7JTK",
+      "network": "IPSC2",
       "seehöhe": 3100
     },
     {
-      "id": "oe2xzr",
+      "id": "oe2xzr-c4fm-70cm",
+      "rufzeichen": "OE2XZR",
+      "standort": "Gaisberg",
+      "bundesland": "Salzburg",
+      "koordinaten": {
+        "lat": 47.805128,
+        "lng": 13.112955
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 438.6,
+      "rxFrequenz": 431.0,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "Reflekroren können mit der Wires-X Taste aktiviert werden",
+      "seehöhe": 1281
+    },
+    {
+      "id": "oe2xzr-dmr-70cm",
+      "rufzeichen": "OE2XZR",
+      "standort": "Gaisberg",
+      "bundesland": "Salzburg",
+      "koordinaten": {
+        "lat": 47.805128,
+        "lng": 13.112955
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.6,
+      "rxFrequenz": 431.0,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 1281
+    },
+    {
+      "id": "oe2xzr-2m",
+      "rufzeichen": "OE2XZR",
+      "standort": "Gaisberg, Salzburg",
+      "bundesland": "Salzburg",
+      "koordinaten": {
+        "lat": 47.805128,
+        "lng": 13.112955
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.6875,
+      "rxFrequenz": 145.0875,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "ctcss": 88.5,
+      "echolink": 304806,
+      "betreiber": "OE2AIP",
+      "seehöhe": 1281
+    },
+    {
+      "id": "oe2xzr-70cm",
+      "rufzeichen": "OE2XZR",
+      "standort": "Gaisberg, Salzburg",
+      "bundesland": "Salzburg",
+      "koordinaten": {
+        "lat": 47.805128,
+        "lng": 13.112955
+      },
+      "typ": "FM",
+      "band": "70cm",
+      "txFrequenz": 438.4,
+      "rxFrequenz": 430.8,
+      "shift": -7599.999999999965,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "betreiber": "OE2AIP",
+      "seehöhe": 1281,
+      "bemerkung": "OE-Link"
+    },
+    {
+      "id": "oe2xzr-23cm",
       "rufzeichen": "OE2XZR",
       "standort": "Gaisberg, Salzburg",
       "bundesland": "Salzburg",
@@ -396,35 +557,29 @@
       "shift": -28000.0,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "ctcss": 88.5,
-      "echolink": 304806,
       "betreiber": "OE2AIP",
-      "seehöhe": 1281,
-      "bemerkung": "XRF022",
-      "dmrId": 232222
+      "seehöhe": 1281
     },
     {
-      "id": "oe3xav",
-      "rufzeichen": "OE3XAV",
-      "standort": "Kleinhardersdorf Ort, Kleinhadersdorf",
-      "bundesland": "Niederösterreich",
+      "id": "oe2xzr g-d-star-70cm",
+      "rufzeichen": "OE2XZR G",
+      "standort": "XRF022A",
+      "bundesland": "Salzburg",
       "koordinaten": {
-        "lat": 48.66351,
-        "lng": 16.59337
+        "lat": 47.5,
+        "lng": 13.5
       },
-      "typ": "DMR",
+      "typ": "D-STAR",
       "band": "70cm",
-      "txFrequenz": 438.725,
-      "rxFrequenz": 431.125,
-      "shift": -7600.000000000023,
+      "txFrequenz": 439.0,
+      "rxFrequenz": 431.4,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232358,
-      "betreiber": "OE3PKB",
-      "seehöhe": 213
+      "reflector": "XRF022A"
     },
     {
-      "id": "oe3xcr",
+      "id": "oe3xcr-70cm",
       "rufzeichen": "OE3XCR",
       "standort": "Hutwisch, Schäffern",
       "bundesland": "Niederösterreich",
@@ -444,7 +599,25 @@
       "bemerkung": "Coupling OE4XUB/2m"
     },
     {
-      "id": "oe3xda",
+      "id": "oe3xda-c4fm-70cm",
+      "rufzeichen": "OE3XDA",
+      "standort": "Hochkogelberg",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 48.034278,
+        "lng": 14.951167
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 438.85,
+      "rxFrequenz": 431.25,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "seehöhe": 712
+    },
+    {
+      "id": "oe3xda-70cm",
       "rufzeichen": "OE3XDA",
       "standort": "Hochkogel, Amstetten",
       "bundesland": "Niederösterreich",
@@ -459,13 +632,48 @@
       "shift": -7600.000000000023,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
+      "echolink": 344042,
       "betreiber": "OE3JWC",
-      "seehöhe": 712,
-      "bemerkung": "XLX232",
-      "echolink": 344042
+      "seehöhe": 712
     },
     {
-      "id": "oe3xeb",
+      "id": "oe3xda g-d-star-2m",
+      "rufzeichen": "OE3XDA G",
+      "standort": "DCS009A",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "2m",
+      "txFrequenz": 145.575,
+      "rxFrequenz": 144.975,
+      "shift": -600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe3xda g-d-star-70cm",
+      "rufzeichen": "OE3XDA G",
+      "standort": "DCS009A",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.4,
+      "rxFrequenz": 430.79999999999995,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe3xeb-70cm",
       "rufzeichen": "OE3XEB",
       "standort": "Troppberg, Purkersdorf",
       "bundesland": "Niederösterreich",
@@ -484,7 +692,7 @@
       "seehöhe": 540
     },
     {
-      "id": "oe3xes",
+      "id": "oe3xes-2m",
       "rufzeichen": "OE3XES",
       "standort": "Frauenstaffel, Waidhofen an der Thaya",
       "bundesland": "Niederösterreich",
@@ -503,7 +711,7 @@
       "seehöhe": 679
     },
     {
-      "id": "oe3xeu",
+      "id": "oe3xeu-70cm",
       "rufzeichen": "OE3XEU",
       "standort": "Frauenstaffel, Waidhofen an der Thaya",
       "bundesland": "Niederösterreich",
@@ -523,7 +731,7 @@
       "seehöhe": 679
     },
     {
-      "id": "oe3xfc",
+      "id": "oe3xfc-23cm",
       "rufzeichen": "OE3XFC",
       "standort": "Hochwechsel, Neunkirchen",
       "bundesland": "Niederösterreich",
@@ -544,7 +752,7 @@
       "bemerkung": "23cm-Link"
     },
     {
-      "id": "oe3xfw",
+      "id": "oe3xfw-70cm",
       "rufzeichen": "OE3XFW",
       "standort": "Jochgrabenberg, Hochstrass",
       "bundesland": "Niederösterreich",
@@ -565,7 +773,26 @@
       "bemerkung": "Coupling OE3XQA/2m"
     },
     {
-      "id": "oe3xhw",
+      "id": "oe3xhw-2m",
+      "rufzeichen": "OE3XHW",
+      "standort": "Hohe Wand, Wr. Neustadt",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.8346,
+        "lng": 16.04605
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.725,
+      "rxFrequenz": 145.125,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "betreiber": "OE3GWC",
+      "seehöhe": 918
+    },
+    {
+      "id": "oe3xhw-70cm",
       "rufzeichen": "OE3XHW",
       "standort": "Hohe Wand, Wr. Neustadt",
       "bundesland": "Niederösterreich",
@@ -584,29 +811,9 @@
       "seehöhe": 918
     },
     {
-      "id": "oe3xir",
-      "rufzeichen": "OE3XIR",
-      "standort": "Hegerberg, St. Pölten",
-      "bundesland": "Niederösterreich",
-      "koordinaten": {
-        "lat": 48.132098186466926,
-        "lng": 15.778550505638124
-      },
-      "typ": "TETRA",
-      "band": "70cm",
-      "txFrequenz": 430.4125,
-      "rxFrequenz": 430.4125,
-      "shift": 0.0,
-      "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "betreiber": "OE3RBT",
-      "seehöhe": 654,
-      "bemerkung": "TETRA-OE-MASTER"
-    },
-    {
-      "id": "oe3xkc",
+      "id": "oe3xkc-dmr-70cm",
       "rufzeichen": "OE3XKC",
-      "standort": "Fronberg, Kirchberg an der Pielach",
+      "standort": "Kirchberg",
       "bundesland": "Niederösterreich",
       "koordinaten": {
         "lat": 48.03663,
@@ -616,17 +823,16 @@
       "band": "70cm",
       "txFrequenz": 438.5,
       "rxFrequenz": 430.9,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232304,
-      "betreiber": "OE3ICU",
+      "network": "Brandmeister",
       "seehöhe": 516
     },
     {
-      "id": "oe3xkq",
+      "id": "oe3xkq-dmr-70cm",
       "rufzeichen": "OE3XKQ",
-      "standort": "Kuhberg/Egelsee, Krems",
+      "standort": "Egelsee",
       "bundesland": "Niederösterreich",
       "koordinaten": {
         "lat": 48.41759159326165,
@@ -634,19 +840,18 @@
       },
       "typ": "DMR",
       "band": "70cm",
-      "txFrequenz": 438.4,
-      "rxFrequenz": 430.8,
-      "shift": -7599.999999999965,
+      "txFrequenz": 438.475,
+      "rxFrequenz": 430.875,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232395,
-      "betreiber": "OE3MUC",
+      "network": "Brandmeister",
       "seehöhe": 397
     },
     {
-      "id": "oe3xkv",
+      "id": "oe3xkv-dmr-70cm",
       "rufzeichen": "OE3XKV",
-      "standort": "Hochkar, Waidhofen an der Ybbs",
+      "standort": "Hochkar",
       "bundesland": "Niederösterreich",
       "koordinaten": {
         "lat": 47.710833,
@@ -655,16 +860,34 @@
       "typ": "DMR",
       "band": "70cm",
       "txFrequenz": 438.2,
-      "rxFrequenz": 430.6,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 430.59999999999997,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232333,
-      "betreiber": "OE3CDW",
+      "network": "Brandmeister",
       "seehöhe": 1807
     },
     {
-      "id": "oe3xlu",
+      "id": "oe3xlu-2m",
+      "rufzeichen": "OE3XLU",
+      "standort": "Gießhübel, Mödling",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 48.09671,
+        "lng": 16.23893
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.5875,
+      "rxFrequenz": 144.9875,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "betreiber": "OE3KLU",
+      "seehöhe": 398
+    },
+    {
+      "id": "oe3xlu-70cm",
       "rufzeichen": "OE3XLU",
       "standort": "Gießhübel, Mödling",
       "bundesland": "Niederösterreich",
@@ -683,7 +906,84 @@
       "seehöhe": 398
     },
     {
-      "id": "oe3xnr",
+      "id": "oe3xnr-c4fm-70cm",
+      "rufzeichen": "OE3XNR",
+      "standort": "Nebelstein",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 48.672816,
+        "lng": 14.77828
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 438.875,
+      "rxFrequenz": 431.275,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "YCS System Fusion II",
+      "seehöhe": 1005
+    },
+    {
+      "id": "oe3xnr-c4fm-2m",
+      "rufzeichen": "OE3XNR",
+      "standort": "Nebelstein",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 48.672816,
+        "lng": 14.77828
+      },
+      "typ": "C4FM",
+      "band": "2m",
+      "txFrequenz": 145.6375,
+      "rxFrequenz": 145.0375,
+      "shift": -600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "seehöhe": 1005
+    },
+    {
+      "id": "oe3xnr-dmr-70cm",
+      "rufzeichen": "OE3XNR",
+      "standort": "Haugschlag",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 48.672816,
+        "lng": 14.77828
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.875,
+      "rxFrequenz": 431.275,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 1005
+    },
+    {
+      "id": "oe3xnr-2m",
+      "rufzeichen": "OE3XNR",
+      "standort": "Nebelstein, Weitra",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 48.672816,
+        "lng": 14.77828
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.6375,
+      "rxFrequenz": 145.0375,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "ctcss": 88.5,
+      "betreiber": "OE3DZW",
+      "seehöhe": 1005,
+      "bemerkung": "OE-Link"
+    },
+    {
+      "id": "oe3xnr-70cm",
       "rufzeichen": "OE3XNR",
       "standort": "Nebelstein, Weitra",
       "bundesland": "Niederösterreich",
@@ -700,12 +1000,28 @@
       "lastUpdate": "2026-01-28",
       "ctcss": 88.5,
       "betreiber": "OE3DZW",
-      "seehöhe": 1005,
-      "bemerkung": "XLX232",
-      "dmrId": 232305
+      "seehöhe": 1005
     },
     {
-      "id": "oe3xns",
+      "id": "oe3xnr g-d-star-70cm",
+      "rufzeichen": "OE3XNR G",
+      "standort": "DCS009A",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.325,
+      "rxFrequenz": 430.72499999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe3xns-70cm",
       "rufzeichen": "OE3XNS",
       "standort": "Buschberg, Mistelbach",
       "bundesland": "Niederösterreich",
@@ -724,7 +1040,7 @@
       "seehöhe": 490
     },
     {
-      "id": "oe3xor",
+      "id": "oe3xor-70cm",
       "rufzeichen": "OE3XOR",
       "standort": "Hainfelder Hütte, Traisen",
       "bundesland": "Niederösterreich",
@@ -744,7 +1060,26 @@
       "seehöhe": 922
     },
     {
-      "id": "oe3xpa",
+      "id": "oe3xpa-c4fm-70cm",
+      "rufzeichen": "OE3XPA",
+      "standort": "Kaiserkogel",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 48.05978708,
+        "lng": 15.53965351
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 438.45,
+      "rxFrequenz": 430.84999999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "YCS System Fusion II",
+      "seehöhe": 712
+    },
+    {
+      "id": "oe3xpa-2m",
       "rufzeichen": "OE3XPA",
       "standort": "Kaiserkogel, St. Pölten",
       "bundesland": "Niederösterreich",
@@ -752,21 +1087,57 @@
         "lat": 48.05978708,
         "lng": 15.53965351
       },
-      "typ": "D-STAR",
-      "band": "70cm",
-      "txFrequenz": 438.45,
-      "rxFrequenz": 430.85,
-      "shift": -7599.999999999965,
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.65,
+      "rxFrequenz": 145.05,
+      "shift": -599.9999999999943,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
       "ctcss": 162.2,
       "echolink": 341109,
       "betreiber": "OE3CJB",
-      "seehöhe": 712,
-      "bemerkung": "XLX232"
+      "seehöhe": 712
     },
     {
-      "id": "oe3xpc",
+      "id": "oe3xpa g-d-star-70cm",
+      "rufzeichen": "OE3XPA G",
+      "standort": "DCS009A",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.45,
+      "rxFrequenz": 430.84999999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe3xpc-dmr-70cm",
+      "rufzeichen": "OE3XPC",
+      "standort": "Lilienfeld/Hinteralm",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.97206,
+        "lng": 15.61039
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.7,
+      "rxFrequenz": 431.09999999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "Brandmeister",
+      "seehöhe": 1314
+    },
+    {
+      "id": "oe3xpc-23cm",
       "rufzeichen": "OE3XPC",
       "standort": "Hinteralm, Lilienfeld",
       "bundesland": "Niederösterreich",
@@ -781,14 +1152,13 @@
       "shift": -28000.0,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232341,
       "betreiber": "OE3CJB",
       "seehöhe": 1314
     },
     {
-      "id": "oe3xqa",
+      "id": "oe3xqa-dmr-70cm",
       "rufzeichen": "OE3XQA",
-      "standort": "Exelberg, Wien",
+      "standort": "Exelberg",
       "bundesland": "Niederösterreich",
       "koordinaten": {
         "lat": 48.24876033,
@@ -798,15 +1168,52 @@
       "band": "70cm",
       "txFrequenz": 438.675,
       "rxFrequenz": 431.075,
-      "shift": -7600.000000000023,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 515
+    },
+    {
+      "id": "oe3xqa-2m",
+      "rufzeichen": "OE3XQA",
+      "standort": "Exelberg, Wien",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 48.24876033,
+        "lng": 16.2440474
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.75,
+      "rxFrequenz": 145.15,
+      "shift": -599.9999999999943,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
       "seehöhe": 515,
-      "bemerkung": "Coupling OE3XFW/70cm",
-      "dmrId": 232104
+      "bemerkung": "Coupling OE3XFW/70cm"
     },
     {
-      "id": "oe3xrb",
+      "id": "oe3xrb-dmr-70cm",
+      "rufzeichen": "OE3XRB",
+      "standort": "Sonntagberg",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.996538,
+        "lng": 14.764472
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.55,
+      "rxFrequenz": 430.95,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 713
+    },
+    {
+      "id": "oe3xrb-70cm",
       "rufzeichen": "OE3XRB",
       "standort": "Sonntagberg, Waidhofen/Ybbs",
       "bundesland": "Niederösterreich",
@@ -821,15 +1228,33 @@
       "shift": -7599.999999999965,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232302,
+      "echolink": 589653,
       "betreiber": "OE3DNA",
-      "seehöhe": 713,
-      "echolink": 589653
+      "seehöhe": 713
     },
     {
-      "id": "oe3xsa",
+      "id": "oe3xsa-c4fm-70cm",
       "rufzeichen": "OE3XSA",
-      "standort": "Sandl, Krems",
+      "standort": "Sandl",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 48.43338,
+        "lng": 15.471389
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 438.775,
+      "rxFrequenz": 431.17499999999995,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "WIRES-X",
+      "seehöhe": 697
+    },
+    {
+      "id": "oe3xsa-dmr-70cm",
+      "rufzeichen": "OE3XSA",
+      "standort": "Sandl",
       "bundesland": "Niederösterreich",
       "koordinaten": {
         "lat": 48.43338,
@@ -839,15 +1264,33 @@
       "band": "70cm",
       "txFrequenz": 438.35,
       "rxFrequenz": 430.75,
-      "shift": -7600.000000000023,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "Brandmeister",
+      "seehöhe": 697
+    },
+    {
+      "id": "oe3xsa-2m",
+      "rufzeichen": "OE3XSA",
+      "standort": "Sandl, Krems",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 48.43338,
+        "lng": 15.471389
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.7,
+      "rxFrequenz": 145.1,
+      "shift": -599.9999999999943,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
       "betreiber": "OE3WLS",
-      "seehöhe": 697,
-      "dmrId": 232394
+      "seehöhe": 697
     },
     {
-      "id": "oe3xsu",
+      "id": "oe3xsu-70cm",
       "rufzeichen": "OE3XSU",
       "standort": "Rittmannsberg, St. Valentin",
       "bundesland": "Niederösterreich",
@@ -866,9 +1309,9 @@
       "seehöhe": 388
     },
     {
-      "id": "oe3xtc",
+      "id": "oe3xtc-dmr-70cm",
       "rufzeichen": "OE3XTC",
-      "standort": "Hollabrunn Stadt, Hollabrunn",
+      "standort": "Hollabrunn",
       "bundesland": "Niederösterreich",
       "koordinaten": {
         "lat": 48.56105797949712,
@@ -877,39 +1320,17 @@
       "typ": "DMR",
       "band": "70cm",
       "txFrequenz": 438.075,
-      "rxFrequenz": 430.475,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 430.47499999999997,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "ctcss": 162.2,
-      "dmrId": 232089,
-      "betreiber": "OE3TEC",
+      "network": "Brandmeister",
       "seehöhe": 227
     },
     {
-      "id": "oe3xtr",
-      "rufzeichen": "OE3XTR",
-      "standort": "Hohe Wand, Wr. Neustadt",
-      "bundesland": "Niederösterreich",
-      "koordinaten": {
-        "lat": 47.8346,
-        "lng": 16.04605
-      },
-      "typ": "DMR",
-      "band": "70cm",
-      "txFrequenz": 438.4,
-      "rxFrequenz": 430.8,
-      "shift": -7599.999999999965,
-      "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "dmrId": 232391,
-      "betreiber": "OE3KLU",
-      "seehöhe": 918
-    },
-    {
-      "id": "oe3xva",
+      "id": "oe3xva-dmr-70cm",
       "rufzeichen": "OE3XVA",
-      "standort": "Rittmannsberg, St. Valentin",
+      "standort": "St. Valentin",
       "bundesland": "Niederösterreich",
       "koordinaten": {
         "lat": 48.158249,
@@ -919,17 +1340,34 @@
       "band": "70cm",
       "txFrequenz": 438.625,
       "rxFrequenz": 431.025,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232071,
-      "betreiber": "OE3OCC",
+      "network": "Brandmeister",
       "seehöhe": 388
     },
     {
-      "id": "oe3xvj",
+      "id": "oe3xvi g-d-star-70cm",
+      "rufzeichen": "OE3XVI G",
+      "standort": "DCS009A",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.275,
+      "rxFrequenz": 430.67499999999995,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe3xvj-dmr-70cm",
       "rufzeichen": "OE3XVJ",
-      "standort": "FH Wr Neustadt, Wiener Neustadt",
+      "standort": "Wiener Neustadt",
       "bundesland": "Niederösterreich",
       "koordinaten": {
         "lat": 47.839,
@@ -939,15 +1377,51 @@
       "band": "70cm",
       "txFrequenz": 438.225,
       "rxFrequenz": 430.625,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "ctcss": 162.2,
-      "betreiber": "OE3OMF",
+      "network": "IPSC2",
       "seehöhe": 271
     },
     {
-      "id": "oe3xwj",
+      "id": "oe3xvj g-d-star-70cm",
+      "rufzeichen": "OE3XVJ G",
+      "standort": "REF096A",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.225,
+      "rxFrequenz": 430.625,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "REF096A"
+    },
+    {
+      "id": "oe3xwj-dmr-70cm",
+      "rufzeichen": "OE3XWJ",
+      "standort": "Jauerling",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 48.334521482895106,
+        "lng": 15.337681174278261
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.425,
+      "rxFrequenz": 430.825,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 959
+    },
+    {
+      "id": "oe3xwj-70cm",
       "rufzeichen": "OE3XWJ",
       "standort": "Jauerling, Spitz an der Donau",
       "bundesland": "Niederösterreich",
@@ -962,16 +1436,34 @@
       "shift": -7600.000000000023,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232301,
+      "ctcss": 162.2,
       "betreiber": "OE1KBC",
       "seehöhe": 959,
-      "ctcss": 162.2,
       "bemerkung": "OE-Link"
     },
     {
-      "id": "oe3xwu",
+      "id": "oe3xwu-c4fm-70cm",
       "rufzeichen": "OE3XWU",
-      "standort": "Hochwechsel, Neunkirchen",
+      "standort": "Hochwechsel",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.530448,
+        "lng": 15.9145156
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 439.075,
+      "rxFrequenz": 431.47499999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "YCS System Fusion II",
+      "seehöhe": 1740
+    },
+    {
+      "id": "oe3xwu-dmr-70cm",
+      "rufzeichen": "OE3XWU",
+      "standort": "Hochwechsel",
       "bundesland": "Niederösterreich",
       "koordinaten": {
         "lat": 47.530448,
@@ -980,18 +1472,71 @@
       "typ": "DMR",
       "band": "70cm",
       "txFrequenz": 439.075,
-      "rxFrequenz": 431.475,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 431.47499999999997,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "ctcss": 162.2,
-      "dmrId": 232103,
-      "betreiber": "OE4KMU",
-      "seehöhe": 1740,
-      "bemerkung": "XLX232"
+      "network": "IPSC2/Brandmeister",
+      "seehöhe": 1740
     },
     {
-      "id": "oe3xww",
+      "id": "oe3xwu g-d-star-70cm",
+      "rufzeichen": "OE3XWU G",
+      "standort": "DCS009A",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 439.075,
+      "rxFrequenz": 431.47499999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe3xww-c4fm-70cm",
+      "rufzeichen": "OE3XWW",
+      "standort": "Mönichkirchen",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.510703,
+        "lng": 16.037665
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 438.575,
+      "rxFrequenz": 430.97499999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "YCS System Fusion II",
+      "seehöhe": 948
+    },
+    {
+      "id": "oe3xww-2m",
+      "rufzeichen": "OE3XWW",
+      "standort": "Mönichkirchen Ort, Mönichkirchen",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.510703,
+        "lng": 16.037665
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.7625,
+      "rxFrequenz": 145.1625,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "betreiber": "OE3RPU",
+      "seehöhe": 948
+    },
+    {
+      "id": "oe3xww-23cm",
       "rufzeichen": "OE3XWW",
       "standort": "Mönichkirchen Ort, Mönichkirchen",
       "bundesland": "Niederösterreich",
@@ -1010,9 +1555,63 @@
       "seehöhe": 948
     },
     {
-      "id": "oe3xyr",
+      "id": "oe3xww g-d-star-70cm",
+      "rufzeichen": "OE3XWW G",
+      "standort": "REF096A",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.575,
+      "rxFrequenz": 430.97499999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "REF096A"
+    },
+    {
+      "id": "oe3xww g-d-star-2m",
+      "rufzeichen": "OE3XWW G",
+      "standort": "DCS009A",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "2m",
+      "txFrequenz": 145.7625,
+      "rxFrequenz": 145.1625,
+      "shift": -600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe3xxx-dmr-70cm",
+      "rufzeichen": "OE3XXX",
+      "standort": "Mönichkirchen",
+      "bundesland": "Niederösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.575,
+      "rxFrequenz": 430.97499999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2"
+    },
+    {
+      "id": "oe3xyr-dmr-70cm",
       "rufzeichen": "OE3XYR",
-      "standort": "Weiterner Straße, St. Pölten",
+      "standort": "St. Pölten",
       "bundesland": "Niederösterreich",
       "koordinaten": {
         "lat": 48.22104,
@@ -1022,35 +1621,52 @@
       "band": "70cm",
       "txFrequenz": 438.375,
       "rxFrequenz": 430.775,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232392,
-      "betreiber": "OE3CDW",
+      "network": "Brandmeister",
       "seehöhe": 291
     },
     {
-      "id": "oe4xbj",
-      "rufzeichen": "OE4XBJ",
-      "standort": "Allhau, Oberwart",
+      "id": "oe4xsb-c4fm-70cm",
+      "rufzeichen": "OE4XSB",
+      "standort": "Sonnenberg",
       "bundesland": "Burgenland",
       "koordinaten": {
-        "lat": 47.29383538065063,
-        "lng": 16.090754270553592
+        "lat": 47.875443581357835,
+        "lng": 16.475900647888768
       },
-      "typ": "TETRA",
+      "typ": "C4FM",
       "band": "70cm",
-      "txFrequenz": 430.4125,
-      "rxFrequenz": 430.4125,
-      "shift": 0.0,
+      "txFrequenz": 438.3625,
+      "rxFrequenz": 430.7625,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE4KMU",
-      "seehöhe": 344,
-      "bemerkung": "TETRA-OE-MASTER"
+      "network": "YCS System Fusion II",
+      "seehöhe": 482
     },
     {
-      "id": "oe4xsb",
+      "id": "oe4xsb-dmr-70cm",
+      "rufzeichen": "OE4XSB",
+      "standort": "Sonnenberg",
+      "bundesland": "Burgenland",
+      "koordinaten": {
+        "lat": 47.875443581357835,
+        "lng": 16.475900647888768
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.3625,
+      "rxFrequenz": 430.7625,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 482
+    },
+    {
+      "id": "oe4xsb-70cm",
       "rufzeichen": "OE4XSB",
       "standort": "Sonnenberg im Leithagebirge, Eisenstadt",
       "bundesland": "Burgenland",
@@ -1065,13 +1681,32 @@
       "shift": -7600.000000000023,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232402,
       "betreiber": "OE4JHW",
-      "seehöhe": 482,
-      "bemerkung": "XLX232"
+      "seehöhe": 482
     },
     {
-      "id": "oe4xub",
+      "id": "oe4xub-2m",
+      "rufzeichen": "OE4XUB",
+      "standort": "Brentenriegel, Mattersburg",
+      "bundesland": "Burgenland",
+      "koordinaten": {
+        "lat": 47.659535,
+        "lng": 16.390592
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.775,
+      "rxFrequenz": 145.175,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "echolink": 156782,
+      "betreiber": "OE3VSW",
+      "seehöhe": 605,
+      "bemerkung": "Coupling OE3XCR/70cm"
+    },
+    {
+      "id": "oe4xub-70cm",
       "rufzeichen": "OE4XUB",
       "standort": "Brentenriegel, Mattersburg",
       "bundesland": "Burgenland",
@@ -1086,13 +1721,12 @@
       "shift": -7600.000000000023,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "echolink": 156782,
       "betreiber": "OE3VSW",
       "seehöhe": 605,
       "bemerkung": "OE-Link"
     },
     {
-      "id": "oe5xbr",
+      "id": "oe5xbr-70cm",
       "rufzeichen": "OE5XBR",
       "standort": "Stadt/Froschberg, Linz",
       "bundesland": "Oberösterreich",
@@ -1111,7 +1745,7 @@
       "seehöhe": 327
     },
     {
-      "id": "oe5xdm",
+      "id": "oe5xdm-70cm",
       "rufzeichen": "OE5XDM",
       "standort": "Hunerkogel, Dachstein",
       "bundesland": "Oberösterreich",
@@ -1130,28 +1764,25 @@
       "seehöhe": 2687
     },
     {
-      "id": "oe5xdn",
-      "rufzeichen": "OE5XDN",
-      "standort": "Senftenbach/Wolfau, Ried im Innkreis",
+      "id": "oe5xdn g-d-star-70cm",
+      "rufzeichen": "OE5XDN G",
+      "standort": "REF096C",
       "bundesland": "Oberösterreich",
       "koordinaten": {
-        "lat": 48.27889,
-        "lng": 13.40661
+        "lat": 47.5,
+        "lng": 13.5
       },
       "typ": "D-STAR",
       "band": "70cm",
       "txFrequenz": 438.425,
       "rxFrequenz": 430.825,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "ctcss": 123.0,
-      "betreiber": "OE5KKP",
-      "seehöhe": 476,
-      "bemerkung": "REF096"
+      "reflector": "REF096C"
     },
     {
-      "id": "oe5xdo",
+      "id": "oe5xdo-70cm",
       "rufzeichen": "OE5XDO",
       "standort": "Pfarrkirchen Ort, Pfarrkirchen im Mühlkreis",
       "bundesland": "Oberösterreich",
@@ -1171,7 +1802,7 @@
       "seehöhe": 813
     },
     {
-      "id": "oe5xfk",
+      "id": "oe5xfk-70cm",
       "rufzeichen": "OE5XFK",
       "standort": "Feuerkogel, Ebensee",
       "bundesland": "Oberösterreich",
@@ -1192,27 +1823,7 @@
       "bemerkung": "OE-Link"
     },
     {
-      "id": "oe5xfm",
-      "rufzeichen": "OE5XFM",
-      "standort": "Pointen/Wasserbehälter, Vöcklabruck",
-      "bundesland": "Oberösterreich",
-      "koordinaten": {
-        "lat": 47.991386447192376,
-        "lng": 13.423066735267641
-      },
-      "typ": "ATV",
-      "band": "2m",
-      "txFrequenz": 144.5,
-      "rxFrequenz": 144.5,
-      "shift": 0.0,
-      "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "betreiber": "OE5OZL",
-      "seehöhe": 567,
-      "bemerkung": "Webcam/WX"
-    },
-    {
-      "id": "oe5xfn",
+      "id": "oe5xfn-2m",
       "rufzeichen": "OE5XFN",
       "standort": "Pointen/Wasserbehälter, Vöcklabruck",
       "bundesland": "Oberösterreich",
@@ -1232,9 +1843,28 @@
       "bemerkung": "Parriot WX"
     },
     {
-      "id": "oe5xgl",
+      "id": "oe5xgl-c4fm-2m",
       "rufzeichen": "OE5XGL",
-      "standort": "Grünberg, Gmunden",
+      "standort": "Grünberg",
+      "bundesland": "Oberösterreich",
+      "koordinaten": {
+        "lat": 47.8981318,
+        "lng": 13.8219805
+      },
+      "typ": "C4FM",
+      "band": "2m",
+      "txFrequenz": 145.75,
+      "rxFrequenz": 145.15,
+      "shift": -600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "YCS System Fusion II",
+      "seehöhe": 977
+    },
+    {
+      "id": "oe5xgl-dmr-70cm",
+      "rufzeichen": "OE5XGL",
+      "standort": "Grünberg",
       "bundesland": "Oberösterreich",
       "koordinaten": {
         "lat": 47.8981318,
@@ -1244,18 +1874,32 @@
       "band": "70cm",
       "txFrequenz": 438.8,
       "rxFrequenz": 431.2,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "ctcss": 123.0,
-      "echolink": 849973,
-      "betreiber": "OE5EUL",
-      "seehöhe": 977,
-      "bemerkung": "REF096",
-      "dmrId": 232502
+      "network": "IPSC2/Brandmeister",
+      "seehöhe": 977
     },
     {
-      "id": "oe5xho",
+      "id": "oe5xgl g-d-star-70cm",
+      "rufzeichen": "OE5XGL G",
+      "standort": "DCS009A",
+      "bundesland": "Oberösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.2625,
+      "rxFrequenz": 430.66249999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe5xho-70cm",
       "rufzeichen": "OE5XHO",
       "standort": "Damberg, Steyr",
       "bundesland": "Oberösterreich",
@@ -1274,7 +1918,26 @@
       "seehöhe": 647
     },
     {
-      "id": "oe5xim",
+      "id": "oe5xim-dmr-70cm",
+      "rufzeichen": "OE5XIM",
+      "standort": "Bad Leonfelden Sternstein",
+      "bundesland": "Oberösterreich",
+      "koordinaten": {
+        "lat": 48.5599155,
+        "lng": 14.2690062
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.25,
+      "rxFrequenz": 430.65,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2/Brandmeister",
+      "seehöhe": 1105
+    },
+    {
+      "id": "oe5xim-70cm",
       "rufzeichen": "OE5XIM",
       "standort": "Sternstein, Bad Leonfelden",
       "bundesland": "Oberösterreich",
@@ -1282,23 +1945,57 @@
         "lat": 48.5599155,
         "lng": 14.2690062
       },
+      "typ": "FM",
+      "band": "70cm",
+      "txFrequenz": 438.975,
+      "rxFrequenz": 431.375,
+      "shift": -7600.000000000023,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "ctcss": 123.0,
+      "betreiber": "OE5KPN",
+      "seehöhe": 1105
+    },
+    {
+      "id": "oe5xim g-d-star-70cm",
+      "rufzeichen": "OE5XIM G",
+      "standort": "DCS009A",
+      "bundesland": "Oberösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
       "typ": "D-STAR",
       "band": "70cm",
       "txFrequenz": 439.0625,
       "rxFrequenz": 431.4625,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232518,
-      "betreiber": "OE5KPN",
-      "seehöhe": 1105,
-      "ctcss": 123.0,
-      "bemerkung": "XLX232"
+      "reflector": "DCS009A"
     },
     {
-      "id": "oe5xkl",
+      "id": "oe5xkl-c4fm-70cm",
       "rufzeichen": "OE5XKL",
-      "standort": "Krippenstein, Obertraun",
+      "standort": "Krippenstein",
+      "bundesland": "Oberösterreich",
+      "koordinaten": {
+        "lat": 47.524287,
+        "lng": 13.69208
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 438.5,
+      "rxFrequenz": 430.9,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "seehöhe": 2106
+    },
+    {
+      "id": "oe5xkl-dmr-70cm",
+      "rufzeichen": "OE5XKL",
+      "standort": "Krippenstein",
       "bundesland": "Oberösterreich",
       "koordinaten": {
         "lat": 47.524287,
@@ -1308,17 +2005,91 @@
       "band": "70cm",
       "txFrequenz": 438.5,
       "rxFrequenz": 430.9,
-      "shift": -7600.000000000023,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2/Brandmeister",
+      "seehöhe": 2106
+    },
+    {
+      "id": "oe5xkl-2m",
+      "rufzeichen": "OE5XKL",
+      "standort": "Krippenstein, Obertraun",
+      "bundesland": "Oberösterreich",
+      "koordinaten": {
+        "lat": 47.524287,
+        "lng": 13.69208
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.7125,
+      "rxFrequenz": 145.1125,
+      "shift": -599.9999999999943,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
       "echolink": 534058,
       "betreiber": "OE5VFM",
-      "seehöhe": 2106,
-      "dmrId": 232504,
-      "bemerkung": "XLX232"
+      "seehöhe": 2106
     },
     {
-      "id": "oe5xll",
+      "id": "oe5xkl g-d-star-70cm",
+      "rufzeichen": "OE5XKL G",
+      "standort": "DCS009A",
+      "bundesland": "Oberösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.5,
+      "rxFrequenz": 430.9,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe5xll-dmr-70cm",
+      "rufzeichen": "OE5XLL",
+      "standort": "Lichtenberg",
+      "bundesland": "Oberösterreich",
+      "koordinaten": {
+        "lat": 48.38515,
+        "lng": 14.25445
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.475,
+      "rxFrequenz": 430.875,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 927
+    },
+    {
+      "id": "oe5xll-2m",
+      "rufzeichen": "OE5XLL",
+      "standort": "Lichtenberg, Linz",
+      "bundesland": "Oberösterreich",
+      "koordinaten": {
+        "lat": 48.38515,
+        "lng": 14.25445
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.6,
+      "rxFrequenz": 145.0,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "betreiber": "OE5RNL",
+      "seehöhe": 927,
+      "bemerkung": "Coupling 70cm"
+    },
+    {
+      "id": "oe5xll-70cm",
       "rufzeichen": "OE5XLL",
       "standort": "Lichtenberg, Linz",
       "bundesland": "Oberösterreich",
@@ -1335,11 +2106,29 @@
       "lastUpdate": "2026-01-28",
       "betreiber": "OE5RNL",
       "seehöhe": 927,
-      "bemerkung": "Coupling 2m",
-      "dmrId": 232501
+      "bemerkung": "Coupling 2m"
     },
     {
-      "id": "oe5xol",
+      "id": "oe5xol-c4fm-70cm",
+      "rufzeichen": "OE5XOL",
+      "standort": "Linz - Breitenstein",
+      "bundesland": "Oberösterreich",
+      "koordinaten": {
+        "lat": 48.4152993,
+        "lng": 14.27429015
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 438.2875,
+      "rxFrequenz": 430.6875,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "YCS System Fusion II",
+      "seehöhe": 955
+    },
+    {
+      "id": "oe5xol-70cm",
       "rufzeichen": "OE5XOL",
       "standort": "Breitenstein, Linz",
       "bundesland": "Oberösterreich",
@@ -1354,53 +2143,67 @@
       "shift": -7599.999999999965,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE5PON",
-      "seehöhe": 955,
-      "bemerkung": "XLX232",
       "ctcss": 123.0,
-      "echolink": 351807
+      "echolink": 351807,
+      "betreiber": "OE5PON",
+      "seehöhe": 955
     },
     {
-      "id": "oe5xoo",
-      "rufzeichen": "OE5XOO",
-      "standort": "Leonding HTL, Linz",
+      "id": "oe5xol g-d-star-70cm",
+      "rufzeichen": "OE5XOL G",
+      "standort": "DCS009A",
       "bundesland": "Oberösterreich",
       "koordinaten": {
-        "lat": 48.268521,
-        "lng": 14.25186
+        "lat": 47.5,
+        "lng": 13.5
       },
-      "typ": "TETRA",
+      "typ": "D-STAR",
       "band": "70cm",
-      "txFrequenz": 430.4125,
-      "rxFrequenz": 430.4125,
-      "shift": 0.0,
+      "txFrequenz": 438.525,
+      "rxFrequenz": 430.92499999999995,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE5EIR",
-      "seehöhe": 279
+      "reflector": "DCS009A"
     },
     {
-      "id": "oe5xtp",
-      "rufzeichen": "OE5XTP",
-      "standort": "Poschenhof, Vöklabruck",
+      "id": "oe5xtp g-d-star-70cm",
+      "rufzeichen": "OE5XTP G",
+      "standort": "REF096A",
       "bundesland": "Oberösterreich",
       "koordinaten": {
-        "lat": 48.02072354491044,
-        "lng": 13.643034696578981
+        "lat": 47.5,
+        "lng": 13.5
       },
       "typ": "D-STAR",
       "band": "70cm",
       "txFrequenz": 438.35,
       "rxFrequenz": 430.75,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE5STM",
-      "seehöhe": 494,
-      "bemerkung": "REF096"
+      "reflector": "REF096A"
     },
     {
-      "id": "oe5xul",
+      "id": "oe5xtp g-d-star-2m",
+      "rufzeichen": "OE5XTP G",
+      "standort": "XRF022A",
+      "bundesland": "Oberösterreich",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "2m",
+      "txFrequenz": 144.825,
+      "rxFrequenz": 144.225,
+      "shift": -600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "XRF022A"
+    },
+    {
+      "id": "oe5xul-2m",
       "rufzeichen": "OE5XUL",
       "standort": "Geiersberg, Ried",
       "bundesland": "Oberösterreich",
@@ -1415,14 +2218,71 @@
       "shift": -599.9999999999943,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE5MLL",
-      "seehöhe": 565,
-      "bemerkung": "Rücksprechen/Steuerung",
       "ctcss": 123.0,
-      "echolink": 611811
+      "echolink": 611811,
+      "betreiber": "OE5MLL",
+      "seehöhe": 565
     },
     {
-      "id": "oe6xag",
+      "id": "oe6xag-c4fm-70cm",
+      "rufzeichen": "OE6XAG",
+      "standort": "Schöckl",
+      "bundesland": "Steiermark",
+      "koordinaten": {
+        "lat": 47.1988534,
+        "lng": 15.4669424
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 437.975,
+      "rxFrequenz": 430.375,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "YCS System Fusion II",
+      "seehöhe": 1436
+    },
+    {
+      "id": "oe6xag-dmr-70cm",
+      "rufzeichen": "OE6XAG",
+      "standort": "Schöckl",
+      "bundesland": "Steiermark",
+      "koordinaten": {
+        "lat": 47.1988534,
+        "lng": 15.4669424
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 437.975,
+      "rxFrequenz": 430.375,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "Brandmeister",
+      "seehöhe": 1436
+    },
+    {
+      "id": "oe6xag-2m",
+      "rufzeichen": "OE6XAG",
+      "standort": "Schöckl, Graz",
+      "bundesland": "Steiermark",
+      "koordinaten": {
+        "lat": 47.1988534,
+        "lng": 15.4669424
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.6,
+      "rxFrequenz": 145.0,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "ctcss": 103.5,
+      "betreiber": "OE6DJG",
+      "seehöhe": 1436
+    },
+    {
+      "id": "oe6xag-70cm",
       "rufzeichen": "OE6XAG",
       "standort": "Schöckl, Graz",
       "bundesland": "Steiermark",
@@ -1440,31 +2300,47 @@
       "ctcss": 103.5,
       "betreiber": "OE6DJG",
       "seehöhe": 1436,
-      "dmrId": 232601,
       "bemerkung": "OE-Link"
     },
     {
-      "id": "oe6xar",
-      "rufzeichen": "OE6XAR",
-      "standort": "Lachtal, Judenburg",
+      "id": "oe6xag g-d-star-70cm",
+      "rufzeichen": "OE6XAG G",
+      "standort": "DCS009A",
       "bundesland": "Steiermark",
       "koordinaten": {
-        "lat": 47.25505,
-        "lng": 14.34483
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 437.975,
+      "rxFrequenz": 430.375,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe6xbf-dmr-70cm",
+      "rufzeichen": "OE6XBF",
+      "standort": "Stradner Kogel",
+      "bundesland": "Steiermark",
+      "koordinaten": {
+        "lat": 46.84521579785275,
+        "lng": 15.93197822570801
       },
       "typ": "DMR",
       "band": "70cm",
-      "txFrequenz": 438.425,
-      "rxFrequenz": 430.825,
-      "shift": -7600.000000000023,
+      "txFrequenz": 438.9125,
+      "rxFrequenz": 431.3125,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232603,
-      "betreiber": "OE6POD",
-      "seehöhe": 1765
+      "network": "IPSC2",
+      "seehöhe": 607
     },
     {
-      "id": "oe6xbf",
+      "id": "oe6xbf-70cm",
       "rufzeichen": "OE6XBF",
       "standort": "Stradner Kogel, Bad Gleichenberg",
       "bundesland": "Steiermark",
@@ -1479,16 +2355,33 @@
       "shift": -7600.000000000023,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232604,
+      "echolink": 62308,
       "betreiber": "OE6TYG",
       "seehöhe": 607,
-      "echolink": 62308,
       "bemerkung": "100Ah  Batterie"
     },
     {
-      "id": "oe6xbg",
+      "id": "oe6xbg-c4fm-2m",
       "rufzeichen": "OE6XBG",
-      "standort": "Rennfeld, Bruck an der Mur",
+      "standort": "Rennfeld",
+      "bundesland": "Steiermark",
+      "koordinaten": {
+        "lat": 47.40554,
+        "lng": 15.35936
+      },
+      "typ": "C4FM",
+      "band": "2m",
+      "txFrequenz": 145.65,
+      "rxFrequenz": 145.05,
+      "shift": -600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "seehöhe": 1618
+    },
+    {
+      "id": "oe6xbg-dmr-70cm",
+      "rufzeichen": "OE6XBG",
+      "standort": "Rennfeld",
       "bundesland": "Steiermark",
       "koordinaten": {
         "lat": 47.40554,
@@ -1498,16 +2391,14 @@
       "band": "70cm",
       "txFrequenz": 438.925,
       "rxFrequenz": 431.325,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE6MKD",
-      "seehöhe": 1618,
-      "bemerkung": "not linked",
-      "dmrId": 232602
+      "network": "IPSC2",
+      "seehöhe": 1618
     },
     {
-      "id": "oe6xcd",
+      "id": "oe6xcd-70cm",
       "rufzeichen": "OE6XCD",
       "standort": "Stuhleck, Mürzzuschlag",
       "bundesland": "Steiermark",
@@ -1526,7 +2417,7 @@
       "seehöhe": 1781
     },
     {
-      "id": "oe6xcg",
+      "id": "oe6xcg-70cm",
       "rufzeichen": "OE6XCG",
       "standort": "Grambach Ort, Graz",
       "bundesland": "Steiermark",
@@ -1545,7 +2436,7 @@
       "seehöhe": 337
     },
     {
-      "id": "oe6xdd",
+      "id": "oe6xdd-23cm",
       "rufzeichen": "OE6XDD",
       "standort": "Schöckl, Graz",
       "bundesland": "Steiermark",
@@ -1566,7 +2457,7 @@
       "bemerkung": "23cm-Link"
     },
     {
-      "id": "oe6xdf",
+      "id": "oe6xdf-23cm",
       "rufzeichen": "OE6XDF",
       "standort": "Dobl, Graz",
       "bundesland": "Steiermark",
@@ -1585,7 +2476,63 @@
       "seehöhe": 349
     },
     {
-      "id": "oe6xdg",
+      "id": "oe6xdf g-d-star-2m",
+      "rufzeichen": "OE6XDF G",
+      "standort": "REF096A",
+      "bundesland": "Steiermark",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "2m",
+      "txFrequenz": 145.6375,
+      "rxFrequenz": 145.0375,
+      "shift": -600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "REF096A"
+    },
+    {
+      "id": "oe6xdf g-d-star-70cm",
+      "rufzeichen": "OE6XDF G",
+      "standort": "REF096A",
+      "bundesland": "Steiermark",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.9,
+      "rxFrequenz": 431.29999999999995,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "REF096A"
+    },
+    {
+      "id": "oe6xdg-2m",
+      "rufzeichen": "OE6XDG",
+      "standort": "Lachtal, Judenburg",
+      "bundesland": "Steiermark",
+      "koordinaten": {
+        "lat": 47.25505,
+        "lng": 14.34483
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.7,
+      "rxFrequenz": 145.1,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "echolink": 827580,
+      "betreiber": "OE6POD",
+      "seehöhe": 1765
+    },
+    {
+      "id": "oe6xdg-70cm",
       "rufzeichen": "OE6XDG",
       "standort": "Lachtal, Judenburg",
       "bundesland": "Steiermark",
@@ -1600,15 +2547,13 @@
       "shift": -7600.000000000023,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "echolink": 827580,
+      "ctcss": 103.5,
       "betreiber": "OE6POD",
       "seehöhe": 1765,
-      "dmrId": 232608,
-      "ctcss": 103.5,
       "bemerkung": "OE-Link"
     },
     {
-      "id": "oe6xfd",
+      "id": "oe6xfd-70cm",
       "rufzeichen": "OE6XFD",
       "standort": "St. Bartholomä, Graz",
       "bundesland": "Steiermark",
@@ -1628,7 +2573,7 @@
       "seehöhe": 475
     },
     {
-      "id": "oe6xgd",
+      "id": "oe6xgd-70cm",
       "rufzeichen": "OE6XGD",
       "standort": "Ungerdorf Ort, Gleisdorf",
       "bundesland": "Steiermark",
@@ -1647,9 +2592,9 @@
       "seehöhe": 406
     },
     {
-      "id": "oe6xlr",
+      "id": "oe6xlr-dmr-70cm",
       "rufzeichen": "OE6XLR",
-      "standort": "Mugl, Leoben",
+      "standort": "Mugel",
       "bundesland": "Steiermark",
       "koordinaten": {
         "lat": 47.35869726113119,
@@ -1659,17 +2604,16 @@
       "band": "70cm",
       "txFrequenz": 438.25,
       "rxFrequenz": 430.65,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232622,
-      "betreiber": "OE6SQD",
+      "network": "IPSC2",
       "seehöhe": 1626
     },
     {
-      "id": "oe6xmd",
+      "id": "oe6xmd-c4fm-70cm",
       "rufzeichen": "OE6XMD",
-      "standort": "Zirbitzkogel, Murtal",
+      "standort": "Zirbitzkogel",
       "bundesland": "Steiermark",
       "koordinaten": {
         "lat": 47.063469,
@@ -1679,16 +2623,15 @@
       "band": "70cm",
       "txFrequenz": 438.8,
       "rxFrequenz": 431.2,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE6WVG",
       "seehöhe": 2394
     },
     {
-      "id": "oe6xme",
+      "id": "oe6xme-dmr-70cm",
       "rufzeichen": "OE6XME",
-      "standort": "Kindberg Ort, Bruck an der Mur",
+      "standort": "Kindberg",
       "bundesland": "Steiermark",
       "koordinaten": {
         "lat": 47.50585,
@@ -1697,16 +2640,15 @@
       "typ": "DMR",
       "band": "70cm",
       "txFrequenz": 438.525,
-      "rxFrequenz": 430.925,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 430.92499999999995,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232609,
-      "betreiber": "OE6JFG",
+      "network": "Brandmeister",
       "seehöhe": 568
     },
     {
-      "id": "oe6xng",
+      "id": "oe6xng-70cm",
       "rufzeichen": "OE6XNG",
       "standort": "Gaberl/Wiedneralm, Zeltweg",
       "bundesland": "Steiermark",
@@ -1725,7 +2667,7 @@
       "seehöhe": 1596
     },
     {
-      "id": "oe6xpf",
+      "id": "oe6xpf-70cm",
       "rufzeichen": "OE6XPF",
       "standort": "Pichling, Stainz",
       "bundesland": "Steiermark",
@@ -1744,7 +2686,25 @@
       "seehöhe": 355
     },
     {
-      "id": "oe6xpg",
+      "id": "oe6xpg-c4fm-2m",
+      "rufzeichen": "OE6XPG",
+      "standort": "Schladming/Planai",
+      "bundesland": "Steiermark",
+      "koordinaten": {
+        "lat": 47.369088,
+        "lng": 13.726221
+      },
+      "typ": "C4FM",
+      "band": "2m",
+      "txFrequenz": 145.675,
+      "rxFrequenz": 145.07500000000002,
+      "shift": -600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "seehöhe": 1905
+    },
+    {
+      "id": "oe6xpg-2m",
       "rufzeichen": "OE6XPG",
       "standort": "Planai, Schladming",
       "bundesland": "Steiermark",
@@ -1763,7 +2723,7 @@
       "seehöhe": 1905
     },
     {
-      "id": "oe6xre",
+      "id": "oe6xre-70cm",
       "rufzeichen": "OE6XRE",
       "standort": "Eisenerzer Reichenstein, Leoben",
       "bundesland": "Steiermark",
@@ -1783,27 +2743,83 @@
       "seehöhe": 2135
     },
     {
-      "id": "oe6xwg",
-      "rufzeichen": "OE6XWG",
-      "standort": "Kainbach, Gleisdorf",
-      "bundesland": "Steiermark",
+      "id": "oe7xbi-dmr-70cm",
+      "rufzeichen": "OE7XBI",
+      "standort": "Rangger Koepfl",
+      "bundesland": "Tirol",
       "koordinaten": {
-        "lat": 47.11183966358552,
-        "lng": 15.549316705804372
+        "lat": 47.242985,
+        "lng": 11.181174
       },
-      "typ": "TETRA",
+      "typ": "DMR",
       "band": "70cm",
-      "txFrequenz": 430.4875,
-      "rxFrequenz": 430.4875,
-      "shift": 0.0,
+      "txFrequenz": 439.075,
+      "rxFrequenz": 431.47499999999997,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE6DJG",
-      "seehöhe": 564,
-      "bemerkung": "TETRA-OE-MASTER"
+      "network": "IPSC2",
+      "seehöhe": 1938
     },
     {
-      "id": "oe7xbi",
+      "id": "oe7xbi-6m",
+      "rufzeichen": "OE7XBI",
+      "standort": "Rangger Köpfl, Oberpferfuss",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.242985,
+        "lng": 11.181174
+      },
+      "typ": "FM",
+      "band": "6m",
+      "txFrequenz": 51.91,
+      "rxFrequenz": 51.31,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "betreiber": "OE7NCI",
+      "seehöhe": 1938
+    },
+    {
+      "id": "oe7xbi-70cm",
+      "rufzeichen": "OE7XBI",
+      "standort": "Rangger Köpfl, Oberpferfuss",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.242985,
+        "lng": 11.181174
+      },
+      "typ": "FM",
+      "band": "70cm",
+      "txFrequenz": 439.05,
+      "rxFrequenz": 431.45,
+      "shift": -7600.000000000023,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "betreiber": "OE7NCI",
+      "seehöhe": 1938
+    },
+    {
+      "id": "oe7xbi-23cm",
+      "rufzeichen": "OE7XBI",
+      "standort": "Rangger Köpfl, Oberpferfuss",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.242985,
+        "lng": 11.181174
+      },
+      "typ": "FM",
+      "band": "23cm",
+      "txFrequenz": 1259.2,
+      "rxFrequenz": 1294.2,
+      "shift": 35000.0,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "betreiber": "OE7WSH",
+      "seehöhe": 1938
+    },
+    {
+      "id": "oe7xbi-13cm",
       "rufzeichen": "OE7XBI",
       "standort": "Rangger Köpfl, Oberpferfuss",
       "bundesland": "Tirol",
@@ -1820,13 +2836,31 @@
       "lastUpdate": "2026-01-28",
       "betreiber": "OE7NCI",
       "seehöhe": 1938,
-      "dmrId": 232702,
       "bemerkung": "DTMF 9 for report"
     },
     {
-      "id": "oe7xcj",
+      "id": "oe7xcj-c4fm-70cm",
       "rufzeichen": "OE7XCJ",
-      "standort": "Stadt/Brixner Straße, Innsbruck",
+      "standort": "Innsbruck",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.264819,
+        "lng": 11.39865
+      },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 438.4,
+      "rxFrequenz": 430.79999999999995,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "YCS System Fusion II",
+      "seehöhe": 580
+    },
+    {
+      "id": "oe7xcj-dmr-70cm",
+      "rufzeichen": "OE7XCJ",
+      "standort": "Innsbruck",
       "bundesland": "Tirol",
       "koordinaten": {
         "lat": 47.264819,
@@ -1835,16 +2869,52 @@
       "typ": "DMR",
       "band": "70cm",
       "txFrequenz": 438.4,
-      "rxFrequenz": 430.8,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 430.79999999999995,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232706,
-      "betreiber": "OE7AAI",
+      "network": "IPSC2/Brandmeister",
       "seehöhe": 580
     },
     {
-      "id": "oe7xet",
+      "id": "oe7xcj g-d-star-70cm",
+      "rufzeichen": "OE7XCJ G",
+      "standort": "DCS009A",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.4,
+      "rxFrequenz": 430.79999999999995,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe7xet-d-star-70cm",
+      "rufzeichen": "OE7XET",
+      "standort": "Ehrwald",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.42045556,
+        "lng": 10.92726389
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 433.95,
+      "rxFrequenz": 426.34999999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009T",
+      "seehöhe": 1123
+    },
+    {
+      "id": "oe7xet-70cm",
       "rufzeichen": "OE7XET",
       "standort": "Grubigstein, Lermoos",
       "bundesland": "Tirol",
@@ -1859,13 +2929,13 @@
       "shift": -7600.000000000023,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
+      "echolink": 105199,
       "betreiber": "OE7AGT",
       "seehöhe": 1123,
-      "bemerkung": "Südtirol Link / lokal 77 Hz",
-      "echolink": 105199
+      "bemerkung": "Südtirol Link / lokal 77 Hz"
     },
     {
-      "id": "oe7xfi",
+      "id": "oe7xfi-70cm",
       "rufzeichen": "OE7XFI",
       "standort": "Gallzein Kogelmoos, Jenbach",
       "bundesland": "Tirol",
@@ -1884,7 +2954,7 @@
       "seehöhe": 1108
     },
     {
-      "id": "oe7xfj",
+      "id": "oe7xfj-70cm",
       "rufzeichen": "OE7XFJ",
       "standort": "Harschbichl, St. Johann in Tirol",
       "bundesland": "Tirol",
@@ -1899,12 +2969,11 @@
       "shift": -7599.999999999965,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232712,
       "betreiber": "OE7AOT",
       "seehöhe": 1601
     },
     {
-      "id": "oe7xgi",
+      "id": "oe7xgi-2m",
       "rufzeichen": "OE7XGI",
       "standort": "Wurmkogel Lift, Sölden",
       "bundesland": "Tirol",
@@ -1923,9 +2992,9 @@
       "seehöhe": 3020
     },
     {
-      "id": "oe7xgr",
+      "id": "oe7xgr-dmr-70cm",
       "rufzeichen": "OE7XGR",
-      "standort": "Gefrorene Wand, Hintertux",
+      "standort": "Gefrorene Wand",
       "bundesland": "Tirol",
       "koordinaten": {
         "lat": 47.064977,
@@ -1935,36 +3004,31 @@
       "band": "70cm",
       "txFrequenz": 438.925,
       "rxFrequenz": 431.325,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "ctcss": 77.0,
-      "dmrId": 232705,
-      "betreiber": "OE7FMI",
+      "network": "IPSC2",
       "seehöhe": 3247
     },
     {
-      "id": "oe7xih",
-      "rufzeichen": "OE7XIH",
-      "standort": "Hoadl, Innsbruck",
+      "id": "oe7xih g-d-star-70cm",
+      "rufzeichen": "OE7XIH G",
+      "standort": "Unbekannt",
       "bundesland": "Tirol",
       "koordinaten": {
-        "lat": 47.183272,
-        "lng": 11.281548
+        "lat": 47.5,
+        "lng": 13.5
       },
       "typ": "D-STAR",
       "band": "70cm",
       "txFrequenz": 438.05,
       "rxFrequenz": 430.45,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "betreiber": "OE7BOE",
-      "seehöhe": 2336,
-      "bemerkung": "XLX409"
+      "lastUpdate": "2026-01-28"
     },
     {
-      "id": "oe7xjh",
+      "id": "oe7xjh-70cm",
       "rufzeichen": "OE7XJH",
       "standort": "Hollbruck, Sillian",
       "bundesland": "Tirol",
@@ -1984,9 +3048,9 @@
       "bemerkung": "LinkSüdtirol"
     },
     {
-      "id": "oe7xkh",
+      "id": "oe7xkh-dmr-70cm",
       "rufzeichen": "OE7XKH",
-      "standort": "Krahberg, Landeck",
+      "standort": "Landeck",
       "bundesland": "Tirol",
       "koordinaten": {
         "lat": 47.145919,
@@ -1996,15 +3060,32 @@
       "band": "70cm",
       "txFrequenz": 438.5,
       "rxFrequenz": 430.9,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232714,
-      "betreiber": "OE7ERJ",
+      "network": "IPSC2/Brandmeister",
       "seehöhe": 2203
     },
     {
-      "id": "oe7xki",
+      "id": "oe7xkh g-d-star-70cm",
+      "rufzeichen": "OE7XKH G",
+      "standort": "REF096A",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.5,
+      "rxFrequenz": 430.9,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "REF096A"
+    },
+    {
+      "id": "oe7xki-2m",
       "rufzeichen": "OE7XKI",
       "standort": "Hohe Salve, Kufstein",
       "bundesland": "Tirol",
@@ -2023,28 +3104,45 @@
       "seehöhe": 1828
     },
     {
-      "id": "oe7xlh",
+      "id": "oe7xlh-c4fm-70cm",
       "rufzeichen": "OE7XLH",
-      "standort": "Iselsberg-Stronach, Lienz",
+      "standort": "Hollbruck",
       "bundesland": "Tirol",
       "koordinaten": {
         "lat": 46.83869,
         "lng": 12.84436
       },
+      "typ": "C4FM",
+      "band": "70cm",
+      "txFrequenz": 438.5,
+      "rxFrequenz": 430.9,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "YCS System Fusion II",
+      "seehöhe": 1130
+    },
+    {
+      "id": "oe7xlh g-d-star-70cm",
+      "rufzeichen": "OE7XLH G",
+      "standort": "Unbekannt",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
       "typ": "D-STAR",
       "band": "70cm",
       "txFrequenz": 438.625,
       "rxFrequenz": 431.025,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "betreiber": "OE7JTK",
-      "seehöhe": 1130
+      "lastUpdate": "2026-01-28"
     },
     {
-      "id": "oe7xli",
+      "id": "oe7xli-c4fm-70cm",
       "rufzeichen": "OE7XLI",
-      "standort": "Hochstein, Lienz",
+      "standort": "Lienz - Hochstein",
       "bundesland": "Tirol",
       "koordinaten": {
         "lat": 46.82166,
@@ -2053,18 +3151,110 @@
       "typ": "C4FM",
       "band": "70cm",
       "txFrequenz": 439.075,
-      "rxFrequenz": 431.475,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 431.47499999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "WIRES-X",
+      "seehöhe": 2019
+    },
+    {
+      "id": "oe7xli-dmr-70cm",
+      "rufzeichen": "OE7XLI",
+      "standort": "Hochstein",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 46.82166,
+        "lng": 12.70025
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.875,
+      "rxFrequenz": 431.275,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 2019
+    },
+    {
+      "id": "oe7xli-2m",
+      "rufzeichen": "OE7XLI",
+      "standort": "Hochstein, Lienz",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 46.82166,
+        "lng": 12.70025
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.7,
+      "rxFrequenz": 145.1,
+      "shift": -599.9999999999943,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
       "betreiber": "OE7JTK",
-      "seehöhe": 2019,
-      "ctcss": 77.0,
-      "bemerkung": "Wires-X",
-      "dmrId": 232710
+      "seehöhe": 2019
     },
     {
-      "id": "oe7xlr",
+      "id": "oe7xli-70cm",
+      "rufzeichen": "OE7XLI",
+      "standort": "Hochstein, Lienz",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 46.82166,
+        "lng": 12.70025
+      },
+      "typ": "FM",
+      "band": "70cm",
+      "txFrequenz": 438.3,
+      "rxFrequenz": 430.7,
+      "shift": -7600.000000000023,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "ctcss": 77.0,
+      "betreiber": "OE7JTK",
+      "seehöhe": 2019,
+      "bemerkung": "OE-Link"
+    },
+    {
+      "id": "oe7xli g-d-star-70cm",
+      "rufzeichen": "OE7XLI G",
+      "standort": "REF096A",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.575,
+      "rxFrequenz": 430.97499999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "REF096A"
+    },
+    {
+      "id": "oe7xli g-d-star-2m",
+      "rufzeichen": "OE7XLI G",
+      "standort": "DCS009T",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "2m",
+      "txFrequenz": 145.725,
+      "rxFrequenz": 145.125,
+      "shift": -600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009T"
+    },
+    {
+      "id": "oe7xlr-70cm",
       "rufzeichen": "OE7XLR",
       "standort": "Seegrube, Innsbruck",
       "bundesland": "Tirol",
@@ -2084,7 +3274,7 @@
       "bemerkung": "LinkSüdtirol"
     },
     {
-      "id": "oe7xmr",
+      "id": "oe7xmr-70cm",
       "rufzeichen": "OE7XMR",
       "standort": "Kanauerberg, Zams",
       "bundesland": "Tirol",
@@ -2103,7 +3293,7 @@
       "seehöhe": 1179
     },
     {
-      "id": "oe7xoi",
+      "id": "oe7xoi-70cm",
       "rufzeichen": "OE7XOI",
       "standort": "Schönjöchl, Landeck",
       "bundesland": "Tirol",
@@ -2123,9 +3313,9 @@
       "seehöhe": 2491
     },
     {
-      "id": "oe7xot",
+      "id": "oe7xot-dmr-70cm",
       "rufzeichen": "OE7XOT",
-      "standort": "Obtarrenz, Imst",
+      "standort": "Obertarrenz",
       "bundesland": "Tirol",
       "koordinaten": {
         "lat": 47.279243560012524,
@@ -2135,16 +3325,32 @@
       "band": "70cm",
       "txFrequenz": 439.1,
       "rxFrequenz": 431.5,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232076,
-      "betreiber": "OE7RMT",
-      "seehöhe": 1050,
-      "bemerkung": "XLX409"
+      "network": "Brandmeister",
+      "seehöhe": 1050
     },
     {
-      "id": "oe7xrt",
+      "id": "oe7xot g-d-star-70cm",
+      "rufzeichen": "OE7XOT G",
+      "standort": "XLX409B",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 439.1,
+      "rxFrequenz": 431.5,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "XLX409B"
+    },
+    {
+      "id": "oe7xrt-2m",
       "rufzeichen": "OE7XRT",
       "standort": "Hahnenkamm, Reutte",
       "bundesland": "Tirol",
@@ -2163,7 +3369,45 @@
       "seehöhe": 1906
     },
     {
-      "id": "oe7xti",
+      "id": "oe7xti-dmr-70cm",
+      "rufzeichen": "OE7XTI",
+      "standort": "Patscherkofel",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.208287,
+        "lng": 11.460929
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.2875,
+      "rxFrequenz": 430.6875,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "Brandmeister",
+      "seehöhe": 2243
+    },
+    {
+      "id": "oe7xti-2m",
+      "rufzeichen": "OE7XTI",
+      "standort": "Patscherkofel, Innsbruck",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.208287,
+        "lng": 11.460929
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.6125,
+      "rxFrequenz": 145.0125,
+      "shift": -600.0000000000227,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "betreiber": "OE7BFT",
+      "seehöhe": 2243
+    },
+    {
+      "id": "oe7xti-70cm",
       "rufzeichen": "OE7XTI",
       "standort": "Patscherkofel, Innsbruck",
       "bundesland": "Tirol",
@@ -2178,16 +3422,15 @@
       "shift": -7600.000000000023,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
+      "ctcss": 77.0,
       "betreiber": "OE7BFT",
       "seehöhe": 2243,
-      "dmrId": 232090,
-      "ctcss": 77.0,
       "bemerkung": "OE-Link"
     },
     {
-      "id": "oe7xtr",
+      "id": "oe7xtr-c4fm-2m",
       "rufzeichen": "OE7XTR",
-      "standort": "Krahberg, Landeck",
+      "standort": "Landeck - Krahberg",
       "bundesland": "Tirol",
       "koordinaten": {
         "lat": 47.145919,
@@ -2197,16 +3440,16 @@
       "band": "2m",
       "txFrequenz": 145.7625,
       "rxFrequenz": 145.1625,
-      "shift": -599.9999999999943,
+      "shift": -600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE7TTT",
+      "network": "YSF OE7-Oberland",
       "seehöhe": 2203
     },
     {
-      "id": "oe7xtt",
+      "id": "oe7xtt-dmr-70cm",
       "rufzeichen": "OE7XTT",
-      "standort": "Penkenjoch, Finkenberg",
+      "standort": "Penken",
       "bundesland": "Tirol",
       "koordinaten": {
         "lat": 47.168667,
@@ -2216,20 +3459,38 @@
       "band": "70cm",
       "txFrequenz": 438.35,
       "rxFrequenz": 430.75,
-      "shift": -7600.000000000023,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 2086
+    },
+    {
+      "id": "oe7xtt-2m",
+      "rufzeichen": "OE7XTT",
+      "standort": "Penkenjoch, Finkenberg",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.168667,
+        "lng": 11.8
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.75,
+      "rxFrequenz": 145.15,
+      "shift": -599.9999999999943,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
       "ctcss": 77.0,
       "echolink": 404786,
       "betreiber": "OE7FMI",
       "seehöhe": 2086,
-      "bemerkung": "Link OE7XZH",
-      "dmrId": 232703
+      "bemerkung": "Link OE7XZH"
     },
     {
-      "id": "oe7xut",
+      "id": "oe7xut-dmr-70cm",
       "rufzeichen": "OE7XUT",
-      "standort": "Kammberg, St. Johann in Tirol",
+      "standort": "St.Ulrich / Pillerseetal",
       "bundesland": "Tirol",
       "koordinaten": {
         "lat": 47.483813,
@@ -2239,15 +3500,14 @@
       "band": "70cm",
       "txFrequenz": 438.625,
       "rxFrequenz": 431.025,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232707,
-      "betreiber": "OE7MFI",
+      "network": "Brandmeister",
       "seehöhe": 1419
     },
     {
-      "id": "oe7xvr",
+      "id": "oe7xvr-2m",
       "rufzeichen": "OE7XVR",
       "standort": "Valluga, Arlberg",
       "bundesland": "Tirol",
@@ -2266,7 +3526,7 @@
       "seehöhe": 2808
     },
     {
-      "id": "oe7xwh",
+      "id": "oe7xwh-2m",
       "rufzeichen": "OE7XWH",
       "standort": "Grünberg bei Silz, Silz",
       "bundesland": "Tirol",
@@ -2285,7 +3545,26 @@
       "seehöhe": 1491
     },
     {
-      "id": "oe7xwt",
+      "id": "oe7xwt-dmr-70cm",
+      "rufzeichen": "OE7XWT",
+      "standort": "Weinbergerhaus Kufstein",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.57772,
+        "lng": 12.20958
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.475,
+      "rxFrequenz": 430.875,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "Brandmeister",
+      "seehöhe": 1269
+    },
+    {
+      "id": "oe7xwt-70cm",
       "rufzeichen": "OE7XWT",
       "standort": "Weinbergerhaus, Kufstein",
       "bundesland": "Tirol",
@@ -2300,35 +3579,32 @@
       "shift": -7600.000000000023,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232750,
+      "echolink": 916589,
       "betreiber": "OE7MPI",
-      "seehöhe": 1269,
-      "echolink": 916589
+      "seehöhe": 1269
     },
     {
-      "id": "oe7xxr",
-      "rufzeichen": "OE7XXR",
-      "standort": "Rofan Roßkogel, Kramsach",
+      "id": "oe7xxr g-d-star-70cm",
+      "rufzeichen": "OE7XXR G",
+      "standort": "DCS009A",
       "bundesland": "Tirol",
       "koordinaten": {
-        "lat": 47.46738,
-        "lng": 11.82695
+        "lat": 47.5,
+        "lng": 13.5
       },
       "typ": "D-STAR",
       "band": "70cm",
       "txFrequenz": 438.2,
-      "rxFrequenz": 430.6,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 430.59999999999997,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "betreiber": "OE7SRI",
-      "seehöhe": 1921,
-      "bemerkung": "XLX232"
+      "reflector": "DCS009A"
     },
     {
-      "id": "oe7xzh",
+      "id": "oe7xzh-dmr-70cm",
       "rufzeichen": "OE7XZH",
-      "standort": "Bruckerberg, Bruck am Ziller",
+      "standort": "Bruckerberg/Zillertal",
       "bundesland": "Tirol",
       "koordinaten": {
         "lat": 47.381759,
@@ -2337,18 +3613,36 @@
       "typ": "DMR",
       "band": "70cm",
       "txFrequenz": 438.45,
-      "rxFrequenz": 430.85,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 430.84999999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 1050
+    },
+    {
+      "id": "oe7xzh-2m",
+      "rufzeichen": "OE7XZH",
+      "standort": "Bruckerberg, Bruck am Ziller",
+      "bundesland": "Tirol",
+      "koordinaten": {
+        "lat": 47.381759,
+        "lng": 11.874329
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.675,
+      "rxFrequenz": 145.075,
+      "shift": -600.0000000000227,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
       "ctcss": 77.0,
       "betreiber": "OE7FMI",
       "seehöhe": 1050,
-      "bemerkung": "Link OE7XTT",
-      "dmrId": 232701
+      "bemerkung": "Link OE7XTT"
     },
     {
-      "id": "oe7xzr",
+      "id": "oe7xzr-2m",
       "rufzeichen": "OE7XZR",
       "standort": "Zugspitze Ö, Ehrwald",
       "bundesland": "Tirol",
@@ -2367,7 +3661,7 @@
       "seehöhe": 2936
     },
     {
-      "id": "oe7xzt",
+      "id": "oe7xzt-70cm",
       "rufzeichen": "OE7XZT",
       "standort": "Ahorn, Mayrhofen",
       "bundesland": "Tirol",
@@ -2387,7 +3681,7 @@
       "bemerkung": "OE-Link"
     },
     {
-      "id": "oe8xck",
+      "id": "oe8xck-70cm",
       "rufzeichen": "OE8XCK",
       "standort": "Rossegger Str/LWZ, Klagenfurt",
       "bundesland": "Kärnten",
@@ -2406,28 +3700,9 @@
       "seehöhe": 441
     },
     {
-      "id": "oe8xdk",
-      "rufzeichen": "OE8XDK",
-      "standort": "Goldeck, Spittal an der Drau",
-      "bundesland": "Kärnten",
-      "koordinaten": {
-        "lat": 46.76179,
-        "lng": 13.45725
-      },
-      "typ": "C4FM",
-      "band": "70cm",
-      "txFrequenz": 439.0,
-      "rxFrequenz": 431.4,
-      "shift": -7600.000000000023,
-      "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "betreiber": "OE8OWK",
-      "seehöhe": 2049
-    },
-    {
-      "id": "oe8xfk",
+      "id": "oe8xfk-dmr-70cm",
       "rufzeichen": "OE8XFK",
-      "standort": "Dobratsch, Villach",
+      "standort": "Dobratsch",
       "bundesland": "Kärnten",
       "koordinaten": {
         "lat": 46.603397,
@@ -2436,17 +3711,15 @@
       "typ": "DMR",
       "band": "70cm",
       "txFrequenz": 438.9,
-      "rxFrequenz": 431.3,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 431.29999999999995,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "ctcss": 88.5,
-      "dmrId": 232895,
-      "betreiber": "OE8URQ",
+      "network": "Brandmeister",
       "seehöhe": 2159
     },
     {
-      "id": "oe8xfq",
+      "id": "oe8xfq-23cm",
       "rufzeichen": "OE8XFQ",
       "standort": "Dobratsch, Villach",
       "bundesland": "Kärnten",
@@ -2465,29 +3738,9 @@
       "seehöhe": 2159
     },
     {
-      "id": "oe8xgk",
-      "rufzeichen": "OE8XGK",
-      "standort": "Finkenstein/Neumüllern, Villach",
-      "bundesland": "Kärnten",
-      "koordinaten": {
-        "lat": 46.56579,
-        "lng": 13.83948
-      },
-      "typ": "DMR",
-      "band": "70cm",
-      "txFrequenz": 438.45,
-      "rxFrequenz": 430.85,
-      "shift": -7599.999999999965,
-      "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "dmrId": 232836,
-      "betreiber": "OE8VIK",
-      "seehöhe": 507
-    },
-    {
-      "id": "oe8xkk",
+      "id": "oe8xkk-c4fm-70cm",
       "rufzeichen": "OE8XKK",
-      "standort": "Pyramidenkogel, Klagenfurt",
+      "standort": "Pyramidenkogel",
       "bundesland": "Kärnten",
       "koordinaten": {
         "lat": 46.608914,
@@ -2496,17 +3749,52 @@
       "typ": "C4FM",
       "band": "70cm",
       "txFrequenz": 439.075,
-      "rxFrequenz": 431.475,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 431.47499999999997,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232108,
-      "betreiber": "OE8HJK",
-      "seehöhe": 849,
-      "bemerkung": "XLX232"
+      "network": "YCS System Fusion II",
+      "seehöhe": 849
     },
     {
-      "id": "oe8xkp",
+      "id": "oe8xkk-dmr-70cm",
+      "rufzeichen": "OE8XKK",
+      "standort": "Pyramidenkogel",
+      "bundesland": "Kärnten",
+      "koordinaten": {
+        "lat": 46.608914,
+        "lng": 14.14479
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.6,
+      "rxFrequenz": 431.0,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 849
+    },
+    {
+      "id": "oe8xkk g-d-star-70cm",
+      "rufzeichen": "OE8XKK G",
+      "standort": "DCS009A",
+      "bundesland": "Kärnten",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.8375,
+      "rxFrequenz": 431.23749999999995,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe8xkp-70cm",
       "rufzeichen": "OE8XKP",
       "standort": "Klippitztörl, Wolfsberg",
       "bundesland": "Kärnten",
@@ -2524,30 +3812,28 @@
       "seehöhe": 1626
     },
     {
-      "id": "oe8xkq",
-      "rufzeichen": "OE8XKQ",
-      "standort": "Gerlitzen, Villach",
+      "id": "oe8xmk-c4fm-70cm",
+      "rufzeichen": "OE8XMK",
+      "standort": "Magdalensberg",
       "bundesland": "Kärnten",
       "koordinaten": {
-        "lat": 46.695,
-        "lng": 13.914167
+        "lat": 46.728051,
+        "lng": 14.429426
       },
       "typ": "C4FM",
       "band": "70cm",
-      "txFrequenz": 439.05,
-      "rxFrequenz": 431.45,
-      "shift": -7600.000000000023,
+      "txFrequenz": 438.225,
+      "rxFrequenz": 430.625,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "ctcss": 88.5,
-      "echolink": 921900,
-      "betreiber": "OE8PKR",
-      "seehöhe": 1909
+      "network": "YCS System Fusion II",
+      "seehöhe": 1059
     },
     {
-      "id": "oe8xmk",
+      "id": "oe8xmk-dmr-70cm",
       "rufzeichen": "OE8XMK",
-      "standort": "Magdalensberg, Klagenfurt",
+      "standort": "Magdalensberg",
       "bundesland": "Kärnten",
       "koordinaten": {
         "lat": 46.728051,
@@ -2557,17 +3843,73 @@
       "band": "70cm",
       "txFrequenz": 438.85,
       "rxFrequenz": 431.25,
-      "shift": -7600.000000000023,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 1059
+    },
+    {
+      "id": "oe8xmk-2m",
+      "rufzeichen": "OE8XMK",
+      "standort": "Magdalensberg, Klagenfurt",
+      "bundesland": "Kärnten",
+      "koordinaten": {
+        "lat": 46.728051,
+        "lng": 14.429426
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.625,
+      "rxFrequenz": 145.025,
+      "shift": -599.9999999999943,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "ctcss": 88.5,
+      "betreiber": "OE8HJK",
+      "seehöhe": 1059
+    },
+    {
+      "id": "oe8xmk-70cm",
+      "rufzeichen": "OE8XMK",
+      "standort": "Magdalensberg, Klagenfurt",
+      "bundesland": "Kärnten",
+      "koordinaten": {
+        "lat": 46.728051,
+        "lng": 14.429426
+      },
+      "typ": "FM",
+      "band": "70cm",
+      "txFrequenz": 438.575,
+      "rxFrequenz": 430.975,
+      "shift": -7599.999999999965,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
       "ctcss": 88.5,
       "betreiber": "OE8HJK",
       "seehöhe": 1059,
-      "bemerkung": "OE-Link",
-      "dmrId": 232802
+      "bemerkung": "OE-Link"
     },
     {
-      "id": "oe8xnk",
+      "id": "oe8xmk g-d-star-70cm",
+      "rufzeichen": "OE8XMK G",
+      "standort": "DCS009A",
+      "bundesland": "Kärnten",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.425,
+      "rxFrequenz": 430.825,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe8xnk-2m",
       "rufzeichen": "OE8XNK",
       "standort": "Gerlitzen, Villach",
       "bundesland": "Kärnten",
@@ -2586,7 +3928,7 @@
       "seehöhe": 1909
     },
     {
-      "id": "oe8xok",
+      "id": "oe8xok-2m",
       "rufzeichen": "OE8XOK",
       "standort": "Goldeck, Spittal an der Drau",
       "bundesland": "Kärnten",
@@ -2605,9 +3947,9 @@
       "seehöhe": 2049
     },
     {
-      "id": "oe8xpk",
+      "id": "oe8xpk-c4fm-70cm",
       "rufzeichen": "OE8XPK",
-      "standort": "Petzen, Bleiburg",
+      "standort": "Petzen",
       "bundesland": "Kärnten",
       "koordinaten": {
         "lat": 46.518507,
@@ -2616,78 +3958,70 @@
       "typ": "C4FM",
       "band": "70cm",
       "txFrequenz": 439.0875,
-      "rxFrequenz": 431.4875,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 431.48749999999995,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "ctcss": 88.5,
-      "dmrId": 232802,
-      "betreiber": "OE8HJK",
-      "seehöhe": 1678,
-      "bemerkung": "XLX232"
+      "network": "YCS System Fusion II",
+      "seehöhe": 1678
     },
     {
-      "id": "oe8xvk",
-      "rufzeichen": "OE8XVK",
-      "standort": "Stadt/LKH, Villach",
+      "id": "oe8xpk-dmr-70cm",
+      "rufzeichen": "OE8XPK",
+      "standort": "Petzen",
       "bundesland": "Kärnten",
       "koordinaten": {
-        "lat": 46.61612,
-        "lng": 13.85777
+        "lat": 46.518507,
+        "lng": 14.772985
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.5,
+      "rxFrequenz": 430.9,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "IPSC2",
+      "seehöhe": 1678
+    },
+    {
+      "id": "oe8xpk g-d-star-70cm",
+      "rufzeichen": "OE8XPK G",
+      "standort": "DCS009A",
+      "bundesland": "Kärnten",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.7,
+      "rxFrequenz": 431.09999999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "DCS009A"
+    },
+    {
+      "id": "oe8xvk g-d-star-70cm",
+      "rufzeichen": "OE8XVK G",
+      "standort": "REF096A",
+      "bundesland": "Kärnten",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
       },
       "typ": "D-STAR",
       "band": "70cm",
       "txFrequenz": 438.55,
       "rxFrequenz": 430.95,
-      "shift": -7600.000000000023,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "ctcss": 88.5,
-      "betreiber": "OE8WUR",
-      "seehöhe": 494,
-      "bemerkung": "REF096"
+      "reflector": "REF096A"
     },
     {
-      "id": "oe8xwk",
-      "rufzeichen": "OE8XWK",
-      "standort": "St. Georgen am Längsee Ort, St Veit an der Glan",
-      "bundesland": "Kärnten",
-      "koordinaten": {
-        "lat": 46.80088,
-        "lng": 14.43904
-      },
-      "typ": "DMR",
-      "band": "70cm",
-      "txFrequenz": 438.95,
-      "rxFrequenz": 431.35,
-      "shift": -7599.999999999965,
-      "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "dmrId": 232805,
-      "seehöhe": 620
-    },
-    {
-      "id": "oe8xwz",
-      "rufzeichen": "OE8XWZ",
-      "standort": "Wölfnitz Ort, Klagenfurt",
-      "bundesland": "Kärnten",
-      "koordinaten": {
-        "lat": 46.66441,
-        "lng": 14.25703
-      },
-      "typ": "D-STAR",
-      "band": "70cm",
-      "txFrequenz": 438.775,
-      "rxFrequenz": 431.175,
-      "shift": -7599.999999999965,
-      "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "betreiber": "OE8LCK",
-      "seehöhe": 456,
-      "bemerkung": "XLX232"
-    },
-    {
-      "id": "oe9xfv",
+      "id": "oe9xfv-70cm",
       "rufzeichen": "OE9XFV",
       "standort": "Gebhartsberg, Bregenz",
       "bundesland": "Vorarlberg",
@@ -2702,14 +4036,32 @@
       "shift": -7599.999999999965,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "echolink": 523186,
+      "ctcss": 85.4,
       "betreiber": "OE9AFV",
       "seehöhe": 596,
-      "bemerkung": "P25",
-      "ctcss": 85.4
+      "bemerkung": "P25"
     },
     {
-      "id": "oe9xkv",
+      "id": "oe9xkv-dmr-70cm",
+      "rufzeichen": "OE9XKV",
+      "standort": "Karren - Dornbirn",
+      "bundesland": "Vorarlberg",
+      "koordinaten": {
+        "lat": 47.38802843464625,
+        "lng": 9.750838279724123
+      },
+      "typ": "DMR",
+      "band": "70cm",
+      "txFrequenz": 438.5,
+      "rxFrequenz": 430.9,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "Brandmeister",
+      "seehöhe": 970
+    },
+    {
+      "id": "oe9xkv-70cm",
       "rufzeichen": "OE9XKV",
       "standort": "Karren, Dornbirn",
       "bundesland": "Vorarlberg",
@@ -2724,56 +4076,14 @@
       "shift": -7600.000000000023,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232078,
+      "ctcss": 85.4,
       "betreiber": "OE9MNR",
-      "seehöhe": 970,
-      "ctcss": 85.4
+      "seehöhe": 970
     },
     {
-      "id": "oe9xmh",
-      "rufzeichen": "OE9XMH",
-      "standort": "Muttersberg, Bludenz",
-      "bundesland": "Vorarlberg",
-      "koordinaten": {
-        "lat": 47.18057966668588,
-        "lng": 9.82533931732178
-      },
-      "typ": "DMR",
-      "band": "70cm",
-      "txFrequenz": 438.275,
-      "rxFrequenz": 430.675,
-      "shift": -7599.999999999965,
-      "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "dmrId": 232907,
-      "betreiber": "OE9KBV",
-      "seehöhe": 1398
-    },
-    {
-      "id": "oe9xvd",
-      "rufzeichen": "OE9XVD",
-      "standort": "Bludenz Mitte, Bludenz",
-      "bundesland": "Vorarlberg",
-      "koordinaten": {
-        "lat": 47.15434722,
-        "lng": 9.824066667
-      },
-      "typ": "TETRA",
-      "band": "70cm",
-      "txFrequenz": 432.8,
-      "rxFrequenz": 432.8,
-      "shift": 0.0,
-      "status": "aktiv",
-      "lastUpdate": "2026-01-28",
-      "echolink": 966926,
-      "betreiber": "OE9KBV",
-      "seehöhe": 564,
-      "bemerkung": "D-A-CH-Reflektor"
-    },
-    {
-      "id": "oe9xvi",
+      "id": "oe9xvi-dmr-70cm",
       "rufzeichen": "OE9XVI",
-      "standort": "Vorderälpele, Feldkirch",
+      "standort": "Frastanz",
       "bundesland": "Vorarlberg",
       "koordinaten": {
         "lat": 47.20918,
@@ -2783,18 +4093,54 @@
       "band": "70cm",
       "txFrequenz": 438.2875,
       "rxFrequenz": 430.6875,
-      "shift": -7600.000000000023,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "network": "Brandmeister",
+      "seehöhe": 1315
+    },
+    {
+      "id": "oe9xvi-2m",
+      "rufzeichen": "OE9XVI",
+      "standort": "Vorderälpele, Feldkirch",
+      "bundesland": "Vorarlberg",
+      "koordinaten": {
+        "lat": 47.20918,
+        "lng": 9.591069
+      },
+      "typ": "FM",
+      "band": "2m",
+      "txFrequenz": 145.65,
+      "rxFrequenz": 145.05,
+      "shift": -599.9999999999943,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
       "ctcss": 85.4,
       "echolink": 264519,
-      "betreiber": "OE9PKV",
+      "betreiber": "OE9SAU",
       "seehöhe": 1315,
-      "bemerkung": "XLX905",
-      "dmrId": 232902
+      "bemerkung": "TG 2329"
     },
     {
-      "id": "oe9xvv",
+      "id": "oe9xvi g-d-star-70cm",
+      "rufzeichen": "OE9XVI G",
+      "standort": "XLX905V",
+      "bundesland": "Vorarlberg",
+      "koordinaten": {
+        "lat": 47.5,
+        "lng": 13.5
+      },
+      "typ": "D-STAR",
+      "band": "70cm",
+      "txFrequenz": 438.2,
+      "rxFrequenz": 430.59999999999997,
+      "shift": -7600,
+      "status": "aktiv",
+      "lastUpdate": "2026-01-28",
+      "reflector": "XLX905V"
+    },
+    {
+      "id": "oe9xvv-70cm",
       "rufzeichen": "OE9XVV",
       "standort": "Dünserberg, Bludenz",
       "bundesland": "Vorarlberg",
@@ -2815,7 +4161,7 @@
       "bemerkung": "P25"
     },
     {
-      "id": "oe9xxd",
+      "id": "oe9xxd-70cm",
       "rufzeichen": "OE9XXD",
       "standort": "Dornbirn Erlosenstraße, Dornbirn",
       "bundesland": "Vorarlberg",
@@ -2836,9 +4182,9 @@
       "bemerkung": "OE-Link"
     },
     {
-      "id": "oe9xxh",
+      "id": "oe9xxh-dmr-70cm",
       "rufzeichen": "OE9XXH",
-      "standort": "Hard, Bregenz",
+      "standort": "Hard",
       "bundesland": "Vorarlberg",
       "koordinaten": {
         "lat": 47.48602,
@@ -2847,15 +4193,18 @@
       "typ": "DMR",
       "band": "70cm",
       "txFrequenz": 438.4625,
-      "rxFrequenz": 430.8625,
-      "shift": -7599.999999999965,
+      "rxFrequenz": 430.86249999999995,
+      "shift": -7600,
       "status": "aktiv",
       "lastUpdate": "2026-01-28",
-      "dmrId": 232077,
-      "betreiber": "OE9TNT",
+      "network": "Brandmeister",
       "seehöhe": 399
     }
   ],
-  "lastUpdate": "2026-01-28T15:56:00.069185+00:00",
-  "version": "1.0.0"
+  "lastUpdate": "2026-01-28T16:18:14.761606+00:00",
+  "version": "1.0.0",
+  "sources": {
+    "oevsv": 221,
+    "oe8vik": 113
+  }
 }

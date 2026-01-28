@@ -2,7 +2,9 @@
 """
 Relaisblick Data Updater
 
-Main script to fetch and merge relay data from multiple sources.
+Main script to fetch and merge relay data from multiple sources:
+- OE8VIK websites (DMR, D-STAR, C4FM) - primary source for digital repeaters
+- OEVSV API - primary source for FM repeaters
 """
 
 import json
@@ -10,10 +12,9 @@ import logging
 import argparse
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Optional
 
 from sources.oevsv import OevsvScraper, RelaisInfo
-from sources.repeaterbook import RepeaterbookClient, RepeaterInfo
+from sources.oe8vik import OE8VIKScraper, DigitalRelaisInfo
 
 logging.basicConfig(
     level=logging.INFO,
@@ -23,22 +24,48 @@ logger = logging.getLogger(__name__)
 
 DEFAULT_OUTPUT = Path(__file__).parent.parent / "data" / "relais.json"
 
+# Mapping from OEVSV Bundesland to our format
+BUNDESLAND_FROM_CALLSIGN = {
+    "1": "Wien",
+    "2": "Salzburg",
+    "3": "Niederösterreich",
+    "4": "Burgenland",
+    "5": "Oberösterreich",
+    "6": "Steiermark",
+    "7": "Tirol",
+    "8": "Kärnten",
+    "9": "Vorarlberg",
+}
+
+
+def get_bundesland_from_callsign(callsign: str) -> str:
+    """Extract Bundesland from callsign prefix."""
+    if len(callsign) >= 3 and callsign.startswith("OE"):
+        digit = callsign[2]
+        return BUNDESLAND_FROM_CALLSIGN.get(digit, "Wien")
+    return "Wien"
+
 
 def merge_relais_data(
     oevsv_data: list[RelaisInfo],
-    repeaterbook_data: list[RepeaterInfo],
+    oe8vik_data: list[DigitalRelaisInfo],
 ) -> list[dict]:
     """
     Merge relay data from multiple sources.
 
-    Priority: ÖVSV > Repeaterbook
-    Matching is done by callsign.
+    Priority for digital modes: OE8VIK > OEVSV
+    FM repeaters: OEVSV only
     """
     merged = {}
+    today = datetime.now(timezone.utc).date().isoformat()
 
-    # First, add Repeaterbook data
-    for r in repeaterbook_data:
-        relais_id = r.rufzeichen.lower().replace("/", "-")
+    # First, add all OEVSV FM repeaters
+    for r in oevsv_data:
+        if r.typ != "FM":
+            continue  # Skip digital from OEVSV, we'll use OE8VIK
+
+        relais_id = f"{r.rufzeichen.lower()}-{r.band}".replace("/", "-")
+
         merged[relais_id] = {
             "id": relais_id,
             "rufzeichen": r.rufzeichen,
@@ -51,93 +78,66 @@ def merge_relais_data(
             "rxFrequenz": r.rx_frequenz,
             "shift": r.shift,
             "status": r.status,
-            "lastUpdate": datetime.now(timezone.utc).date().isoformat(),
+            "lastUpdate": today,
         }
 
         if r.ctcss:
             merged[relais_id]["ctcss"] = r.ctcss
-        if r.dcs_code:
-            merged[relais_id]["dcsCode"] = r.dcs_code
+        if r.echolink:
+            merged[relais_id]["echolink"] = r.echolink
+        if r.betreiber:
+            merged[relais_id]["betreiber"] = r.betreiber
         if r.seehoehe:
             merged[relais_id]["seehöhe"] = r.seehoehe
+        if r.bemerkung:
+            merged[relais_id]["bemerkung"] = r.bemerkung
 
-    # Then, update/add ÖVSV data (higher priority)
-    for r in oevsv_data:
-        relais_id = r.rufzeichen.lower().replace("/", "-")
+    # Then add OE8VIK digital repeaters (these are more up-to-date)
+    for r in oe8vik_data:
+        relais_id = f"{r.rufzeichen.lower()}-{r.typ.lower()}-{r.band}".replace("/", "-")
 
-        if relais_id in merged:
-            # Update existing entry with ÖVSV data
-            entry = merged[relais_id]
-            entry["standort"] = r.standort
-            entry["bundesland"] = r.bundesland
-            entry["koordinaten"] = {"lat": r.lat, "lng": r.lng}
-            entry["typ"] = r.typ
-            entry["band"] = r.band
-            entry["txFrequenz"] = r.tx_frequenz
-            entry["rxFrequenz"] = r.rx_frequenz
-            entry["shift"] = r.shift
-            entry["status"] = r.status
-            entry["lastUpdate"] = datetime.now(timezone.utc).date().isoformat()
+        # Try to get coordinates from OEVSV data
+        lat, lng = 47.5, 13.5  # Default Austria center
+        bundesland = get_bundesland_from_callsign(r.rufzeichen)
+        seehoehe = None
 
-            if r.ctcss:
-                entry["ctcss"] = r.ctcss
-            if r.dcs_code:
-                entry["dcsCode"] = r.dcs_code
-            if r.echolink:
-                entry["echolink"] = r.echolink
-            if r.dmr_id:
-                entry["dmrId"] = r.dmr_id
-            if r.color_code:
-                entry["colorCode"] = r.color_code
-            if r.dstar_module:
-                entry["dstarModule"] = r.dstar_module
-            if r.betreiber:
-                entry["betreiber"] = r.betreiber
-            if r.seehoehe:
-                entry["seehöhe"] = r.seehoehe
-            if r.bemerkung:
-                entry["bemerkung"] = r.bemerkung
-        else:
-            # Create new entry
-            merged[relais_id] = {
-                "id": relais_id,
-                "rufzeichen": r.rufzeichen,
-                "standort": r.standort,
-                "bundesland": r.bundesland,
-                "koordinaten": {"lat": r.lat, "lng": r.lng},
-                "typ": r.typ,
-                "band": r.band,
-                "txFrequenz": r.tx_frequenz,
-                "rxFrequenz": r.rx_frequenz,
-                "shift": r.shift,
-                "status": r.status,
-                "lastUpdate": datetime.now(timezone.utc).date().isoformat(),
-            }
+        # Look for matching OEVSV entry to get coordinates
+        for oevsv_r in oevsv_data:
+            if oevsv_r.rufzeichen == r.rufzeichen:
+                lat, lng = oevsv_r.lat, oevsv_r.lng
+                bundesland = oevsv_r.bundesland
+                seehoehe = oevsv_r.seehoehe
+                break
 
-            if r.ctcss:
-                merged[relais_id]["ctcss"] = r.ctcss
-            if r.dcs_code:
-                merged[relais_id]["dcsCode"] = r.dcs_code
-            if r.echolink:
-                merged[relais_id]["echolink"] = r.echolink
-            if r.dmr_id:
-                merged[relais_id]["dmrId"] = r.dmr_id
-            if r.color_code:
-                merged[relais_id]["colorCode"] = r.color_code
-            if r.dstar_module:
-                merged[relais_id]["dstarModule"] = r.dstar_module
-            if r.betreiber:
-                merged[relais_id]["betreiber"] = r.betreiber
-            if r.seehoehe:
-                merged[relais_id]["seehöhe"] = r.seehoehe
-            if r.bemerkung:
-                merged[relais_id]["bemerkung"] = r.bemerkung
+        merged[relais_id] = {
+            "id": relais_id,
+            "rufzeichen": r.rufzeichen,
+            "standort": r.standort,
+            "bundesland": bundesland,
+            "koordinaten": {"lat": lat, "lng": lng},
+            "typ": r.typ,
+            "band": r.band,
+            "txFrequenz": r.tx_frequenz,
+            "rxFrequenz": r.rx_frequenz,
+            "shift": r.shift,
+            "status": r.status,
+            "lastUpdate": today,
+        }
 
-    # Sort by callsign
-    return sorted(merged.values(), key=lambda x: x["rufzeichen"])
+        if r.network:
+            merged[relais_id]["network"] = r.network
+        if r.module:
+            merged[relais_id]["dstarModule"] = r.module
+        if r.reflector:
+            merged[relais_id]["reflector"] = r.reflector
+        if seehoehe:
+            merged[relais_id]["seehöhe"] = seehoehe
+
+    # Sort by callsign and type
+    return sorted(merged.values(), key=lambda x: (x["rufzeichen"], x["typ"]))
 
 
-def load_existing_data(filepath: Path) -> Optional[dict]:
+def load_existing_data(filepath: Path) -> dict | None:
     """Load existing relay data if available."""
     if not filepath.exists():
         return None
@@ -173,12 +173,12 @@ def main():
     parser.add_argument(
         "--skip-oevsv",
         action="store_true",
-        help="Skip ÖVSV scraping"
+        help="Skip OEVSV API"
     )
     parser.add_argument(
-        "--skip-repeaterbook",
+        "--skip-oe8vik",
         action="store_true",
-        help="Skip Repeaterbook API"
+        help="Skip OE8VIK websites"
     )
     parser.add_argument(
         "-v", "--verbose",
@@ -195,24 +195,24 @@ def main():
 
     # Fetch from sources
     oevsv_data = []
-    repeaterbook_data = []
+    oe8vik_data = []
 
     if not args.skip_oevsv:
         try:
             scraper = OevsvScraper()
             oevsv_data = scraper.fetch_relais()
         except Exception as e:
-            logger.error(f"ÖVSV scraping failed: {e}")
+            logger.error(f"OEVSV fetching failed: {e}")
 
-    if not args.skip_repeaterbook:
+    if not args.skip_oe8vik:
         try:
-            client = RepeaterbookClient()
-            repeaterbook_data = client.fetch_repeaters()
+            scraper = OE8VIKScraper()
+            oe8vik_data = scraper.fetch_all()
         except Exception as e:
-            logger.error(f"Repeaterbook fetching failed: {e}")
+            logger.error(f"OE8VIK fetching failed: {e}")
 
-    # If both sources failed, try to keep existing data
-    if not oevsv_data and not repeaterbook_data:
+    # If all sources failed, try to keep existing data
+    if not oevsv_data and not oe8vik_data:
         logger.warning("No data from any source!")
         existing = load_existing_data(args.output)
         if existing:
@@ -222,13 +222,17 @@ def main():
         return
 
     # Merge data
-    merged_relais = merge_relais_data(oevsv_data, repeaterbook_data)
+    merged_relais = merge_relais_data(oevsv_data, oe8vik_data)
 
     # Create output structure
     output_data = {
         "relais": merged_relais,
         "lastUpdate": datetime.now(timezone.utc).isoformat(),
         "version": "1.0.0",
+        "sources": {
+            "oevsv": len(oevsv_data),
+            "oe8vik": len(oe8vik_data),
+        }
     }
 
     # Save
