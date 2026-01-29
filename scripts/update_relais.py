@@ -37,6 +37,19 @@ BUNDESLAND_FROM_CALLSIGN = {
     "9": "Vorarlberg",
 }
 
+# Approximate center coordinates for each Bundesland
+BUNDESLAND_COORDINATES = {
+    "Wien": (48.21, 16.37),
+    "Salzburg": (47.80, 13.04),
+    "Niederösterreich": (48.20, 15.63),
+    "Burgenland": (47.50, 16.53),
+    "Oberösterreich": (48.30, 14.29),
+    "Steiermark": (47.07, 15.44),
+    "Tirol": (47.26, 11.39),
+    "Kärnten": (46.62, 13.85),
+    "Vorarlberg": (47.25, 9.90),
+}
+
 
 def get_bundesland_from_callsign(callsign: str) -> str:
     """Extract Bundesland from callsign prefix."""
@@ -94,16 +107,22 @@ def merge_relais_data(
 
     # Then add OE8VIK digital repeaters (these are more up-to-date)
     for r in oe8vik_data:
-        relais_id = f"{r.rufzeichen.lower()}-{r.typ.lower()}-{r.band}".replace("/", "-")
+        relais_id = f"{r.rufzeichen.lower()}-{r.typ.lower()}-{r.band}".replace("/", "-").replace(" ", "-")
 
-        # Try to get coordinates from OEVSV data
-        lat, lng = 47.5, 13.5  # Default Austria center
+        # Get Bundesland from callsign
         bundesland = get_bundesland_from_callsign(r.rufzeichen)
+
+        # Use Bundesland center as fallback coordinates
+        fallback_coords = BUNDESLAND_COORDINATES.get(bundesland, (47.5, 13.5))
+        lat, lng = fallback_coords
         seehoehe = None
+
+        # Extract base callsign (without module suffix like " G", " B", " C")
+        base_callsign = r.rufzeichen.split()[0] if " " in r.rufzeichen else r.rufzeichen
 
         # Look for matching OEVSV entry to get coordinates
         for oevsv_r in oevsv_data:
-            if oevsv_r.rufzeichen == r.rufzeichen:
+            if oevsv_r.rufzeichen == r.rufzeichen or oevsv_r.rufzeichen == base_callsign:
                 lat, lng = oevsv_r.lat, oevsv_r.lng
                 bundesland = oevsv_r.bundesland
                 seehoehe = oevsv_r.seehoehe
