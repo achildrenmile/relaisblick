@@ -15,7 +15,7 @@
       "rxFrequenz": 430.825,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 306
     },
@@ -34,7 +34,7 @@
       "rxFrequenz": 430.9,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 306
     },
@@ -53,7 +53,7 @@
       "rxFrequenz": 430.875,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 162.2,
       "betreiber": "OE1KBC",
       "seehöhe": 542,
@@ -74,7 +74,7 @@
       "rxFrequenz": 430.7125,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 162.2,
       "betreiber": "OE3KLU",
       "seehöhe": 232
@@ -94,7 +94,7 @@
       "rxFrequenz": 1270.275,
       "shift": -28000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 902425,
       "betreiber": "OE4KMU",
       "seehöhe": 235,
@@ -115,7 +115,7 @@
       "rxFrequenz": 430.92499999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 198
     },
@@ -134,7 +134,7 @@
       "rxFrequenz": 144.975,
       "shift": -600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 198
     },
@@ -153,7 +153,7 @@
       "rxFrequenz": 1270.0,
       "shift": -28000,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 198
     },
@@ -172,7 +172,7 @@
       "rxFrequenz": 431.4,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 162.2,
       "betreiber": "OE1FFS",
       "seehöhe": 435
@@ -192,7 +192,7 @@
       "rxFrequenz": 145.025,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 3302,
       "betreiber": "OE3NSC",
       "seehöhe": 252,
@@ -213,7 +213,7 @@
       "rxFrequenz": 431.05,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3NSC",
       "seehöhe": 252,
       "bemerkung": "Coupling 2m"
@@ -233,7 +233,7 @@
       "rxFrequenz": 1270.025,
       "shift": -28000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE1MCU",
       "seehöhe": 223
     },
@@ -252,7 +252,7 @@
       "rxFrequenz": 2400.6,
       "shift": -49000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 254700,
       "betreiber": "OE1MCU",
       "seehöhe": 223
@@ -272,7 +272,7 @@
       "rxFrequenz": 431.22499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 223
     },
@@ -291,7 +291,7 @@
       "rxFrequenz": 430.975,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 241
     },
     {
@@ -309,7 +309,7 @@
       "rxFrequenz": 430.84999999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 250
     },
@@ -328,7 +328,7 @@
       "rxFrequenz": 431.35,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 162.2,
       "echolink": 6406,
       "seehöhe": 483
@@ -348,7 +348,7 @@
       "rxFrequenz": 145.1625,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE2HFO",
       "seehöhe": 1785
     },
@@ -367,7 +367,7 @@
       "rxFrequenz": 430.92499999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "XRF022A",
       "seehöhe": 1785
     },
@@ -386,7 +386,7 @@
       "rxFrequenz": 145.05,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE2FKM",
       "seehöhe": 3197
     },
@@ -405,7 +405,7 @@
       "rxFrequenz": 431.225,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE2WCL",
       "seehöhe": 2939
     },
@@ -424,7 +424,7 @@
       "rxFrequenz": 145.0125,
       "shift": -600.0000000000227,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE2TRM",
       "seehöhe": 2388
     },
@@ -443,7 +443,7 @@
       "rxFrequenz": 431.375,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE2TRM",
       "seehöhe": 2388
     },
@@ -462,7 +462,7 @@
       "rxFrequenz": 431.4,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 949
     },
@@ -481,7 +481,7 @@
       "rxFrequenz": 431.48749999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 3100
     },
@@ -500,7 +500,7 @@
       "rxFrequenz": 431.0,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Reflekroren können mit der Wires-X Taste aktiviert werden",
       "seehöhe": 1281
     },
@@ -519,7 +519,7 @@
       "rxFrequenz": 431.0,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 1281
     },
@@ -538,7 +538,7 @@
       "rxFrequenz": 145.0875,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 88.5,
       "echolink": 304806,
       "betreiber": "OE2AIP",
@@ -559,7 +559,7 @@
       "rxFrequenz": 430.8,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE2AIP",
       "seehöhe": 1281,
       "bemerkung": "OE-Link"
@@ -579,7 +579,7 @@
       "rxFrequenz": 1270.375,
       "shift": -28000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE2AIP",
       "seehöhe": 1281
     },
@@ -598,7 +598,7 @@
       "rxFrequenz": 431.4,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "XRF022A",
       "seehöhe": 1281
     },
@@ -617,7 +617,7 @@
       "rxFrequenz": 431.2375,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE4KZU",
       "seehöhe": 895,
       "bemerkung": "Coupling OE4XUB/2m"
@@ -637,7 +637,7 @@
       "rxFrequenz": 431.25,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 712
     },
     {
@@ -655,7 +655,7 @@
       "rxFrequenz": 431.25,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 344042,
       "betreiber": "OE3JWC",
       "seehöhe": 712
@@ -675,7 +675,7 @@
       "rxFrequenz": 144.975,
       "shift": -600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 712
     },
@@ -694,7 +694,7 @@
       "rxFrequenz": 430.79999999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 712
     },
@@ -713,7 +713,7 @@
       "rxFrequenz": 431.45,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE1NHU",
       "seehöhe": 540
     },
@@ -732,7 +732,7 @@
       "rxFrequenz": 145.1875,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3KMA",
       "seehöhe": 679
     },
@@ -751,7 +751,7 @@
       "rxFrequenz": 431.425,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 193828,
       "betreiber": "OE3KMA",
       "seehöhe": 679
@@ -771,7 +771,7 @@
       "rxFrequenz": 1270.225,
       "shift": -28000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 541749,
       "betreiber": "OE4KMU",
       "seehöhe": 1740,
@@ -792,7 +792,7 @@
       "rxFrequenz": 431.375,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 162.2,
       "betreiber": "OE3ARC",
       "seehöhe": 645,
@@ -813,7 +813,7 @@
       "rxFrequenz": 145.125,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3GWC",
       "seehöhe": 918
     },
@@ -832,7 +832,7 @@
       "rxFrequenz": 431.15,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3GWC",
       "seehöhe": 918
     },
@@ -851,7 +851,7 @@
       "rxFrequenz": 430.9,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 516
     },
@@ -870,7 +870,7 @@
       "rxFrequenz": 430.875,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 397
     },
@@ -889,7 +889,7 @@
       "rxFrequenz": 430.59999999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 1807
     },
@@ -908,7 +908,7 @@
       "rxFrequenz": 144.9875,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3KLU",
       "seehöhe": 398
     },
@@ -927,7 +927,7 @@
       "rxFrequenz": 431.425,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3KLU",
       "seehöhe": 398
     },
@@ -946,7 +946,7 @@
       "rxFrequenz": 431.275,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 1005
     },
@@ -965,7 +965,7 @@
       "rxFrequenz": 145.0375,
       "shift": -600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 1005
     },
     {
@@ -983,7 +983,7 @@
       "rxFrequenz": 431.275,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 1005
     },
@@ -1002,7 +1002,7 @@
       "rxFrequenz": 145.0375,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 88.5,
       "betreiber": "OE3DZW",
       "seehöhe": 1005,
@@ -1023,7 +1023,7 @@
       "rxFrequenz": 431.275,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 88.5,
       "betreiber": "OE3DZW",
       "seehöhe": 1005
@@ -1043,7 +1043,7 @@
       "rxFrequenz": 430.72499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 1005
     },
@@ -1062,7 +1062,7 @@
       "rxFrequenz": 431.2,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3NSU",
       "seehöhe": 490
     },
@@ -1081,7 +1081,7 @@
       "rxFrequenz": 430.7,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 162.2,
       "betreiber": "OE3ANC",
       "seehöhe": 922
@@ -1101,7 +1101,7 @@
       "rxFrequenz": 430.84999999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 712
     },
@@ -1120,7 +1120,7 @@
       "rxFrequenz": 145.05,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 162.2,
       "echolink": 341109,
       "betreiber": "OE3CJB",
@@ -1141,7 +1141,7 @@
       "rxFrequenz": 430.84999999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 712
     },
@@ -1160,7 +1160,7 @@
       "rxFrequenz": 431.09999999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 1314
     },
@@ -1179,7 +1179,7 @@
       "rxFrequenz": 1270.5,
       "shift": -28000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3CJB",
       "seehöhe": 1314
     },
@@ -1198,7 +1198,7 @@
       "rxFrequenz": 431.075,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 515
     },
@@ -1217,7 +1217,7 @@
       "rxFrequenz": 145.15,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 515,
       "bemerkung": "Coupling OE3XFW/70cm"
     },
@@ -1236,7 +1236,7 @@
       "rxFrequenz": 430.95,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 713
     },
@@ -1255,7 +1255,7 @@
       "rxFrequenz": 431.3,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 589653,
       "betreiber": "OE3DNA",
       "seehöhe": 713
@@ -1275,7 +1275,7 @@
       "rxFrequenz": 431.17499999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "WIRES-X",
       "seehöhe": 697
     },
@@ -1294,7 +1294,7 @@
       "rxFrequenz": 430.75,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 697
     },
@@ -1313,7 +1313,7 @@
       "rxFrequenz": 145.1,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3WLS",
       "seehöhe": 697
     },
@@ -1332,7 +1332,7 @@
       "rxFrequenz": 431.325,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3FXN",
       "seehöhe": 388
     },
@@ -1351,7 +1351,7 @@
       "rxFrequenz": 430.47499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 227
     },
@@ -1370,7 +1370,7 @@
       "rxFrequenz": 431.025,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 388
     },
@@ -1389,7 +1389,7 @@
       "rxFrequenz": 430.67499999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A"
     },
     {
@@ -1407,7 +1407,7 @@
       "rxFrequenz": 430.625,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 271
     },
@@ -1426,7 +1426,7 @@
       "rxFrequenz": 430.625,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "REF096A",
       "seehöhe": 271
     },
@@ -1445,7 +1445,7 @@
       "rxFrequenz": 430.825,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 959
     },
@@ -1464,7 +1464,7 @@
       "rxFrequenz": 431.0,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 162.2,
       "betreiber": "OE1KBC",
       "seehöhe": 959,
@@ -1485,7 +1485,7 @@
       "rxFrequenz": 431.47499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 1740
     },
@@ -1504,7 +1504,7 @@
       "rxFrequenz": 431.47499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2/Brandmeister",
       "seehöhe": 1740
     },
@@ -1523,7 +1523,7 @@
       "rxFrequenz": 431.47499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 1740
     },
@@ -1542,27 +1542,8 @@
       "rxFrequenz": 430.97499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
-      "seehöhe": 1313
-    },
-    {
-      "id": "oe3xww-2m",
-      "rufzeichen": "OE3XWW",
-      "standort": "Mönichkirchen Schwaig, Mönichkirchen",
-      "bundesland": "Niederösterreich",
-      "koordinaten": {
-        "lat": 47.51561111,
-        "lng": 16.001
-      },
-      "typ": "FM",
-      "band": "2m",
-      "txFrequenz": 145.7625,
-      "rxFrequenz": 145.1625,
-      "shift": -599.9999999999943,
-      "status": "aktiv",
-      "lastUpdate": "2026-04-19",
-      "betreiber": "OE3OMF",
       "seehöhe": 1313
     },
     {
@@ -1580,7 +1561,7 @@
       "rxFrequenz": 430.97499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "REF096A",
       "seehöhe": 1313
     },
@@ -1599,7 +1580,7 @@
       "rxFrequenz": 145.1625,
       "shift": -600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 1313
     },
@@ -1618,7 +1599,7 @@
       "rxFrequenz": 430.97499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2"
     },
     {
@@ -1636,7 +1617,7 @@
       "rxFrequenz": 430.775,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 291
     },
@@ -1655,7 +1636,7 @@
       "rxFrequenz": 430.7625,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 482
     },
@@ -1674,7 +1655,7 @@
       "rxFrequenz": 430.7625,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 482
     },
@@ -1693,7 +1674,7 @@
       "rxFrequenz": 431.125,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE4JHW",
       "seehöhe": 482
     },
@@ -1712,7 +1693,7 @@
       "rxFrequenz": 145.175,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 156782,
       "betreiber": "OE3VSW",
       "seehöhe": 605,
@@ -1733,7 +1714,7 @@
       "rxFrequenz": 430.95,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3VSW",
       "seehöhe": 605,
       "bemerkung": "OE-Link"
@@ -1753,7 +1734,7 @@
       "rxFrequenz": 431.175,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE5AJP",
       "seehöhe": 327
     },
@@ -1772,7 +1753,7 @@
       "rxFrequenz": 431.125,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE5MLL",
       "seehöhe": 2687
     },
@@ -1791,7 +1772,7 @@
       "rxFrequenz": 430.825,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "REF096C",
       "seehöhe": 476
     },
@@ -1810,7 +1791,7 @@
       "rxFrequenz": 431.35,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 389978,
       "betreiber": "OE5MKP",
       "seehöhe": 813
@@ -1830,7 +1811,7 @@
       "rxFrequenz": 430.55,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 123.0,
       "betreiber": "OE5BYE",
       "seehöhe": 1590,
@@ -1851,7 +1832,7 @@
       "rxFrequenz": 145.225,
       "shift": 0.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE5OZL",
       "seehöhe": 567,
       "bemerkung": "Parriot WX"
@@ -1871,7 +1852,7 @@
       "rxFrequenz": 145.15,
       "shift": -600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 977
     },
@@ -1890,7 +1871,7 @@
       "rxFrequenz": 431.2,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2/Brandmeister",
       "seehöhe": 977
     },
@@ -1909,7 +1890,7 @@
       "rxFrequenz": 430.66249999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 977
     },
@@ -1928,7 +1909,7 @@
       "rxFrequenz": 431.15,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE5VLL",
       "seehöhe": 647
     },
@@ -1947,7 +1928,7 @@
       "rxFrequenz": 430.65,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2/Brandmeister",
       "seehöhe": 1105
     },
@@ -1966,7 +1947,7 @@
       "rxFrequenz": 431.375,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 123.0,
       "betreiber": "OE5KPN",
       "seehöhe": 1105
@@ -1986,7 +1967,7 @@
       "rxFrequenz": 431.4625,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 1105
     },
@@ -2005,7 +1986,7 @@
       "rxFrequenz": 430.9,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 2106
     },
     {
@@ -2023,7 +2004,7 @@
       "rxFrequenz": 430.9,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2/Brandmeister",
       "seehöhe": 2106
     },
@@ -2042,7 +2023,7 @@
       "rxFrequenz": 145.1125,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 534058,
       "betreiber": "OE5VFM",
       "seehöhe": 2106
@@ -2062,7 +2043,7 @@
       "rxFrequenz": 430.9,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 2106
     },
@@ -2081,7 +2062,7 @@
       "rxFrequenz": 430.875,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 927
     },
@@ -2100,7 +2081,7 @@
       "rxFrequenz": 145.0,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE5RNL",
       "seehöhe": 927,
       "bemerkung": "Coupling 70cm"
@@ -2120,7 +2101,7 @@
       "rxFrequenz": 431.05,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE5RNL",
       "seehöhe": 927,
       "bemerkung": "Coupling 2m"
@@ -2140,7 +2121,7 @@
       "rxFrequenz": 430.6875,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 955
     },
@@ -2159,7 +2140,7 @@
       "rxFrequenz": 430.975,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 123.0,
       "echolink": 351807,
       "betreiber": "OE5PON",
@@ -2180,7 +2161,7 @@
       "rxFrequenz": 430.92499999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 955
     },
@@ -2199,7 +2180,7 @@
       "rxFrequenz": 430.75,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "REF096A",
       "seehöhe": 494
     },
@@ -2218,7 +2199,7 @@
       "rxFrequenz": 144.225,
       "shift": -600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "XRF022A",
       "seehöhe": 494
     },
@@ -2237,7 +2218,7 @@
       "rxFrequenz": 145.175,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 123.0,
       "echolink": 611811,
       "betreiber": "OE5MLL",
@@ -2258,7 +2239,7 @@
       "rxFrequenz": 430.375,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 1436
     },
@@ -2277,7 +2258,7 @@
       "rxFrequenz": 430.375,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 1436
     },
@@ -2296,7 +2277,7 @@
       "rxFrequenz": 145.0,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 103.5,
       "betreiber": "OE6DJG",
       "seehöhe": 1436
@@ -2316,7 +2297,7 @@
       "rxFrequenz": 431.275,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 103.5,
       "betreiber": "OE6DJG",
       "seehöhe": 1436,
@@ -2337,7 +2318,7 @@
       "rxFrequenz": 430.375,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 1436
     },
@@ -2356,7 +2337,7 @@
       "rxFrequenz": 431.3125,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 607
     },
@@ -2375,7 +2356,7 @@
       "rxFrequenz": 431.375,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 62308,
       "betreiber": "OE6TYG",
       "seehöhe": 607,
@@ -2396,7 +2377,7 @@
       "rxFrequenz": 145.05,
       "shift": -600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 1618
     },
     {
@@ -2414,7 +2395,7 @@
       "rxFrequenz": 431.325,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 1618
     },
@@ -2433,7 +2414,7 @@
       "rxFrequenz": 431.025,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE3KLU",
       "seehöhe": 1781
     },
@@ -2452,7 +2433,7 @@
       "rxFrequenz": 431.175,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE6TYG",
       "seehöhe": 337
     },
@@ -2471,7 +2452,7 @@
       "rxFrequenz": 1270.2,
       "shift": -28000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 174703,
       "betreiber": "OE6DJG",
       "seehöhe": 1436,
@@ -2492,7 +2473,7 @@
       "rxFrequenz": 1270.05,
       "shift": -28000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE6THH",
       "seehöhe": 349
     },
@@ -2511,7 +2492,7 @@
       "rxFrequenz": 145.0375,
       "shift": -600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "REF096A",
       "seehöhe": 349
     },
@@ -2530,7 +2511,7 @@
       "rxFrequenz": 431.29999999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "REF096A",
       "seehöhe": 349
     },
@@ -2549,7 +2530,7 @@
       "rxFrequenz": 145.1,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 827580,
       "betreiber": "OE6POD",
       "seehöhe": 1765
@@ -2569,7 +2550,7 @@
       "rxFrequenz": 431.075,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 103.5,
       "betreiber": "OE6POD",
       "seehöhe": 1765,
@@ -2590,7 +2571,7 @@
       "rxFrequenz": 430.6,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 103.5,
       "betreiber": "OE6SSF",
       "seehöhe": 475
@@ -2610,7 +2591,7 @@
       "rxFrequenz": 431.15,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE6ERD",
       "seehöhe": 406
     },
@@ -2629,7 +2610,7 @@
       "rxFrequenz": 430.65,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 1626
     },
@@ -2648,7 +2629,7 @@
       "rxFrequenz": 431.2,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 2394
     },
     {
@@ -2666,7 +2647,7 @@
       "rxFrequenz": 430.92499999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 568
     },
@@ -2685,7 +2666,7 @@
       "rxFrequenz": 431.4,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE6NPG",
       "seehöhe": 1596
     },
@@ -2704,7 +2685,7 @@
       "rxFrequenz": 431.45,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE6MOD",
       "seehöhe": 355
     },
@@ -2723,7 +2704,7 @@
       "rxFrequenz": 145.07500000000002,
       "shift": -600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 1905
     },
     {
@@ -2741,7 +2722,7 @@
       "rxFrequenz": 145.075,
       "shift": -600.0000000000227,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE6SFG",
       "seehöhe": 1905
     },
@@ -2760,7 +2741,7 @@
       "rxFrequenz": 431.5,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 383901,
       "betreiber": "OE6SWG",
       "seehöhe": 2135
@@ -2780,7 +2761,7 @@
       "rxFrequenz": 431.47499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 1938
     },
@@ -2799,7 +2780,7 @@
       "rxFrequenz": 51.31,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7NCI",
       "seehöhe": 1938
     },
@@ -2818,7 +2799,7 @@
       "rxFrequenz": 431.45,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7NCI",
       "seehöhe": 1938
     },
@@ -2837,7 +2818,7 @@
       "rxFrequenz": 1294.2,
       "shift": 35000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7WSH",
       "seehöhe": 1938
     },
@@ -2856,7 +2837,7 @@
       "rxFrequenz": 2449.9,
       "shift": 48000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7NCI",
       "seehöhe": 1938,
       "bemerkung": "DTMF 9 for report"
@@ -2876,7 +2857,7 @@
       "rxFrequenz": 430.79999999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 580
     },
@@ -2895,7 +2876,7 @@
       "rxFrequenz": 430.79999999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2/Brandmeister",
       "seehöhe": 580
     },
@@ -2914,7 +2895,7 @@
       "rxFrequenz": 430.79999999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 580
     },
@@ -2933,7 +2914,7 @@
       "rxFrequenz": 426.34999999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009T",
       "seehöhe": 1123
     },
@@ -2952,7 +2933,7 @@
       "rxFrequenz": 430.625,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 105199,
       "betreiber": "OE7AGT",
       "seehöhe": 1123,
@@ -2973,7 +2954,7 @@
       "rxFrequenz": 431.3,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7WOT",
       "seehöhe": 1108
     },
@@ -2992,7 +2973,7 @@
       "rxFrequenz": 431.425,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7AOT",
       "seehöhe": 1601
     },
@@ -3011,7 +2992,7 @@
       "rxFrequenz": 145.1875,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7ABT",
       "seehöhe": 3020
     },
@@ -3030,7 +3011,7 @@
       "rxFrequenz": 431.325,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 3247
     },
@@ -3049,7 +3030,7 @@
       "rxFrequenz": 430.45,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 2336
     },
     {
@@ -3067,7 +3048,7 @@
       "rxFrequenz": 430.9,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7JTK",
       "seehöhe": 1341,
       "bemerkung": "LinkSüdtirol"
@@ -3087,7 +3068,7 @@
       "rxFrequenz": 430.9,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2/Brandmeister",
       "seehöhe": 2203
     },
@@ -3106,7 +3087,7 @@
       "rxFrequenz": 430.9,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "REF096A",
       "seehöhe": 2203
     },
@@ -3125,7 +3106,7 @@
       "rxFrequenz": 145.175,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7SLI",
       "seehöhe": 1828
     },
@@ -3144,7 +3125,7 @@
       "rxFrequenz": 430.9,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 1130
     },
@@ -3163,7 +3144,7 @@
       "rxFrequenz": 431.025,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 1130
     },
     {
@@ -3181,7 +3162,7 @@
       "rxFrequenz": 431.47499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "WIRES-X",
       "seehöhe": 2019
     },
@@ -3200,7 +3181,7 @@
       "rxFrequenz": 431.275,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 2019
     },
@@ -3219,7 +3200,7 @@
       "rxFrequenz": 145.1,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7JTK",
       "seehöhe": 2019
     },
@@ -3238,7 +3219,7 @@
       "rxFrequenz": 430.7,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 77.0,
       "betreiber": "OE7JTK",
       "seehöhe": 2019,
@@ -3259,7 +3240,7 @@
       "rxFrequenz": 430.97499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "REF096A",
       "seehöhe": 2019
     },
@@ -3278,7 +3259,7 @@
       "rxFrequenz": 145.125,
       "shift": -600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009T",
       "seehöhe": 2019
     },
@@ -3297,7 +3278,7 @@
       "rxFrequenz": 431.05,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7AAI",
       "seehöhe": 1913,
       "bemerkung": "LinkSüdtirol"
@@ -3317,7 +3298,7 @@
       "rxFrequenz": 432.975,
       "shift": 0.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7MMT",
       "seehöhe": 1179
     },
@@ -3336,7 +3317,7 @@
       "rxFrequenz": 431.275,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 96498,
       "betreiber": "OE7SJJ",
       "seehöhe": 2491
@@ -3356,7 +3337,7 @@
       "rxFrequenz": 431.5,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 1050
     },
@@ -3375,7 +3356,7 @@
       "rxFrequenz": 431.5,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "XLX409B",
       "seehöhe": 1050
     },
@@ -3394,7 +3375,7 @@
       "rxFrequenz": 145.1,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 77.0,
       "betreiber": "OE7WRH",
       "seehöhe": 1906
@@ -3414,7 +3395,7 @@
       "rxFrequenz": 430.6875,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 2243
     },
@@ -3433,7 +3414,7 @@
       "rxFrequenz": 145.0125,
       "shift": -600.0000000000227,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7BFT",
       "seehöhe": 2243
     },
@@ -3452,7 +3433,7 @@
       "rxFrequenz": 431.4,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 77.0,
       "betreiber": "OE7BFT",
       "seehöhe": 2243,
@@ -3473,7 +3454,7 @@
       "rxFrequenz": 145.1625,
       "shift": -600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YSF OE7-Oberland",
       "seehöhe": 2203
     },
@@ -3492,7 +3473,7 @@
       "rxFrequenz": 430.75,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 2086
     },
@@ -3511,7 +3492,7 @@
       "rxFrequenz": 145.15,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 77.0,
       "echolink": 404786,
       "betreiber": "OE7FMI",
@@ -3533,7 +3514,7 @@
       "rxFrequenz": 431.025,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 1419
     },
@@ -3552,7 +3533,7 @@
       "rxFrequenz": 145.0875,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7ERJ",
       "seehöhe": 2808
     },
@@ -3571,7 +3552,7 @@
       "rxFrequenz": 145.0625,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7MST",
       "seehöhe": 1491
     },
@@ -3590,7 +3571,7 @@
       "rxFrequenz": 430.875,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 1269
     },
@@ -3609,7 +3590,7 @@
       "rxFrequenz": 431.0,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "echolink": 916589,
       "betreiber": "OE7MPI",
       "seehöhe": 1269
@@ -3629,7 +3610,7 @@
       "rxFrequenz": 430.59999999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 1921
     },
@@ -3648,7 +3629,7 @@
       "rxFrequenz": 430.84999999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 1050
     },
@@ -3667,7 +3648,7 @@
       "rxFrequenz": 145.075,
       "shift": -600.0000000000227,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 77.0,
       "betreiber": "OE7FMI",
       "seehöhe": 1050,
@@ -3688,7 +3669,7 @@
       "rxFrequenz": 432.575,
       "shift": 287000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7BKH",
       "seehöhe": 2936
     },
@@ -3707,7 +3688,7 @@
       "rxFrequenz": 431.375,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE7FMI",
       "seehöhe": 1952,
       "bemerkung": "OE-Link"
@@ -3727,7 +3708,7 @@
       "rxFrequenz": 431.05,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE8RGQ",
       "seehöhe": 441
     },
@@ -3746,7 +3727,7 @@
       "rxFrequenz": 431.29999999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 2159
     },
@@ -3765,7 +3746,7 @@
       "rxFrequenz": 1270.15,
       "shift": -28000.0,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE8URQ",
       "seehöhe": 2159
     },
@@ -3784,7 +3765,7 @@
       "rxFrequenz": 431.47499999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 849
     },
@@ -3803,7 +3784,7 @@
       "rxFrequenz": 431.0,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 849
     },
@@ -3822,7 +3803,7 @@
       "rxFrequenz": 431.23749999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 849
     },
@@ -3841,7 +3822,7 @@
       "rxFrequenz": 430.7,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 1626
     },
     {
@@ -3859,7 +3840,7 @@
       "rxFrequenz": 430.625,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 1059
     },
@@ -3878,7 +3859,7 @@
       "rxFrequenz": 431.25,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 1059
     },
@@ -3897,7 +3878,7 @@
       "rxFrequenz": 145.025,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 88.5,
       "betreiber": "OE8HJK",
       "seehöhe": 1059
@@ -3917,7 +3898,7 @@
       "rxFrequenz": 430.975,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 88.5,
       "betreiber": "OE8HJK",
       "seehöhe": 1059,
@@ -3938,7 +3919,7 @@
       "rxFrequenz": 430.825,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 1059
     },
@@ -3957,7 +3938,7 @@
       "rxFrequenz": 145.1625,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE8DSK",
       "seehöhe": 1909
     },
@@ -3976,7 +3957,7 @@
       "rxFrequenz": 145.05,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "betreiber": "OE8HAK",
       "seehöhe": 2049
     },
@@ -3995,7 +3976,7 @@
       "rxFrequenz": 431.48749999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "YCS System Fusion II",
       "seehöhe": 1678
     },
@@ -4014,7 +3995,7 @@
       "rxFrequenz": 430.9,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "IPSC2",
       "seehöhe": 1678
     },
@@ -4033,7 +4014,7 @@
       "rxFrequenz": 431.09999999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "DCS009A",
       "seehöhe": 1678
     },
@@ -4052,7 +4033,7 @@
       "rxFrequenz": 430.95,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "REF096A",
       "seehöhe": 494
     },
@@ -4071,7 +4052,7 @@
       "rxFrequenz": 430.925,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 85.4,
       "betreiber": "OE9AFV",
       "seehöhe": 596,
@@ -4092,7 +4073,7 @@
       "rxFrequenz": 430.9,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 970
     },
@@ -4111,7 +4092,7 @@
       "rxFrequenz": 431.025,
       "shift": -7600.000000000023,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 85.4,
       "betreiber": "OE9MNR",
       "seehöhe": 970
@@ -4131,7 +4112,7 @@
       "rxFrequenz": 430.6875,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "network": "Brandmeister",
       "seehöhe": 1315
     },
@@ -4150,7 +4131,7 @@
       "rxFrequenz": 145.05,
       "shift": -599.9999999999943,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 85.4,
       "echolink": 264519,
       "betreiber": "OE9SAU",
@@ -4172,7 +4153,7 @@
       "rxFrequenz": 430.59999999999997,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "reflector": "XLX905V",
       "seehöhe": 1315
     },
@@ -4191,7 +4172,7 @@
       "rxFrequenz": 431.225,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 85.4,
       "betreiber": "OE9TEV",
       "seehöhe": 1333,
@@ -4212,7 +4193,7 @@
       "rxFrequenz": 430.9875,
       "shift": -7599.999999999965,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "ctcss": 85.4,
       "betreiber": "OE9KHJ",
       "seehöhe": 426,
@@ -4233,11 +4214,11 @@
       "rxFrequenz": 430.86249999999995,
       "shift": -7600,
       "status": "aktiv",
-      "lastUpdate": "2026-04-19",
+      "lastUpdate": "2026-04-26",
       "seehöhe": 399
     }
   ],
-  "lastUpdate": "2026-04-19T05:18:26.685869+00:00",
+  "lastUpdate": "2026-04-26T05:28:28.725890+00:00",
   "version": "1.0.0",
   "sources": {
     "oevsv": 221,
